@@ -30,6 +30,17 @@ function copyRecursiveSync(src, dest) {
   }
 }
 
+function ensureDependencies(subDir) {
+  const nodeModulesPath = path.join(subDir, 'node_modules');
+  if (!fs.existsSync(nodeModulesPath)) {
+    log(`Installing dependencies in ${path.relative(ROOT_DIR, subDir)}...`);
+    execSync('npm install --include=dev', {
+      cwd: subDir,
+      stdio: 'inherit'
+    });
+  }
+}
+
 try {
   log("Starting Unified Production Build...");
 
@@ -41,37 +52,43 @@ try {
 
   // 2. Build Candidate Portal
   log("Building Candidate Portal (/candidate)...");
-  execSync('npm --prefix Frontend/smarthire-candidate-frontend run build', {
-    cwd: ROOT_DIR,
+  const candDir = path.join(ROOT_DIR, 'Frontend/smarthire-candidate-frontend');
+  ensureDependencies(candDir);
+  execSync('npm run build', {
+    cwd: candDir,
     stdio: 'inherit',
     env: { ...process.env, VITE_BASE_PATH: '/candidate/' }
   });
   copyRecursiveSync(
-    path.join(ROOT_DIR, 'Frontend/smarthire-candidate-frontend/dist'),
+    path.join(candDir, 'dist'),
     path.join(DIST_DIR, 'candidate')
   );
 
   // 3. Build Interviewer Portal
   log("Building Interviewer Portal (/interviewer)...");
-  execSync('npm --prefix Frontend/SmartHire-interviewer-frontend run build', {
-    cwd: ROOT_DIR,
+  const intDir = path.join(ROOT_DIR, 'Frontend/SmartHire-interviewer-frontend');
+  ensureDependencies(intDir);
+  execSync('npm run build', {
+    cwd: intDir,
     stdio: 'inherit',
     env: { ...process.env, VITE_BASE_PATH: '/interviewer/' }
   });
   copyRecursiveSync(
-    path.join(ROOT_DIR, 'Frontend/SmartHire-interviewer-frontend/dist'),
+    path.join(intDir, 'dist'),
     path.join(DIST_DIR, 'interviewer')
   );
 
   // 4. Build Admin Portal
   log("Building Admin Portal (/admin)...");
-  execSync('npm --prefix Frontend/smarthire-admin-frontend run build', {
-    cwd: ROOT_DIR,
+  const adminDir = path.join(ROOT_DIR, 'Frontend/smarthire-admin-frontend');
+  ensureDependencies(adminDir);
+  execSync('npm run build', {
+    cwd: adminDir,
     stdio: 'inherit',
     env: { ...process.env, VITE_BASE_PATH: '/admin/' }
   });
   copyRecursiveSync(
-    path.join(ROOT_DIR, 'Frontend/smarthire-admin-frontend/dist'),
+    path.join(adminDir, 'dist'),
     path.join(DIST_DIR, 'admin')
   );
 
@@ -105,4 +122,3 @@ try {
   console.error("Build failed:", err);
   process.exit(1);
 }
-
