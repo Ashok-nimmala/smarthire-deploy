@@ -1,9 +1,10 @@
 /* Central configuration. The backend is the source of truth for everything else. */
 const _urlParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
+const _isLocal = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
 const _detectedApiBase = (_urlParams && _urlParams.get('api_base'))
   || (typeof window !== 'undefined' && window.SMARTHIRE_API_BASE)
   || (typeof localStorage !== 'undefined' && localStorage.getItem('smarthire_api_base'))
-  || "http://localhost:8000";
+  || (_isLocal ? "http://localhost:8000" : "https://smarthire-deploy-api.onrender.com");
 
 window.ExamConfig = Object.freeze({
   BASE_URL: _detectedApiBase,

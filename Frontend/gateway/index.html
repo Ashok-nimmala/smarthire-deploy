@@ -387,10 +387,12 @@
     const urlParams = new URLSearchParams(window.location.search);
     const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 
+    const DEPLOYED_RENDER_API = 'https://smarthire-deploy-api.onrender.com';
+
     let API_BASE = urlParams.get('api_base')
       || (typeof window !== 'undefined' && window.SMARTHIRE_API_BASE)
       || (typeof localStorage !== 'undefined' && localStorage.getItem('smarthire_api_base'))
-      || (isLocal ? 'http://localhost:8000' : window.location.origin);
+      || (isLocal ? 'http://localhost:8000' : DEPLOYED_RENDER_API);
 
     const DEFAULT_PORTAL_CONFIG = {
       candidate: {

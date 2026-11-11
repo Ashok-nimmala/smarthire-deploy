@@ -1,10 +1,12 @@
 import type { ApiErrorShape, Session } from "./types";
 
+const isLocalHost = typeof window !== "undefined" && (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1");
+
 const BASE_URL =
   (typeof window !== "undefined" && (new URLSearchParams(window.location.search).get("api_base") || (window as any).SMARTHIRE_API_BASE || localStorage.getItem("smarthire_api_base"))) ||
   import.meta.env.VITE_SMARTHIRE_API_BASE ||
   import.meta.env.VITE_API_BASE_URL ||
-  "http://localhost:8000";
+  (isLocalHost ? "http://localhost:8000" : "https://smarthire-deploy-api.onrender.com");
 
 export class SmartHireApiError extends Error {
   code: string;

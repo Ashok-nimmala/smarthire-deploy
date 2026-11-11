@@ -1,7 +1,9 @@
+const isLocalHost = typeof window !== "undefined" && (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1");
+
 export const BASE_URL =
   (typeof window !== "undefined" && (new URLSearchParams(window.location.search).get("api_base") || window.SMARTHIRE_API_BASE || localStorage.getItem("smarthire_api_base"))) ||
   import.meta.env.VITE_API_BASE_URL ||
-  "http://localhost:8000";
+  (isLocalHost ? "http://localhost:8000" : "https://smarthire-deploy-api.onrender.com");
 
 const REMOTE_LAMBDA_URL =
   "https://r6j6keh5jn7ne2oykddo7k5vpi0rhdjx.lambda-url.ap-south-1.on.aws";

@@ -13,10 +13,12 @@ import {
 } from "lucide-react";
 import "./styles.css";
 
+const isLocalHost = typeof window !== "undefined" && (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1");
+
 const API_BASE =
   (typeof window !== "undefined" && (new URLSearchParams(window.location.search).get("api_base") || window.SMARTHIRE_API_BASE || localStorage.getItem("smarthire_api_base"))) ||
   import.meta.env.VITE_API_BASE_URL ||
-  "http://localhost:8000";
+  (isLocalHost ? "http://localhost:8000" : "https://smarthire-deploy-api.onrender.com");
 
 const SESSION_KEY = "smarthire_admin_session";
 
