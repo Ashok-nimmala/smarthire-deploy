@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>SmartHire — Examination</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">SH</div>
+      <div class="brand-text">
+        <strong>SmartHire</strong>
+        <span id="brand-sub">Proctored Assessment</span>
+      </div>
+    </div>
+
+    <!-- Shown only while the exam is in progress -->
+    <div class="exam-meta" id="exam-meta" hidden>
+      <div class="meta-item" id="timer-item" hidden>
+        <span class="meta-label">Time left</span>
+        <span class="timer" id="timer">--:--</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Integrity</span>
+        <span class="integrity" id="integrity">--</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+
+    <!-- LOADING / VALIDATING -->
+    <section id="view-loading" class="card center-text">
+      <div class="spinner"></div>
+      <p>Loading your examination…</p>
+    </section>
+
+    <!-- ERROR -->
+    <section id="view-error" class="card center-text" hidden>
+      <h2>Unable to continue</h2>
+      <div id="error-message" class="alert alert-error" role="alert"></div>
+      <a class="btn btn-primary" href="index.html" id="error-back">Back to login</a>
+    </section>
+
+    <!-- EXAM_OVERVIEW -->
+    <section id="view-overview" class="card" hidden>
+      <div class="overview-head">
+        <h1 id="ov-title">Examination</h1>
+        <p class="org" id="ov-org"></p>
+      </div>
+
+      <div id="ov-alert" class="alert alert-warn" role="alert" hidden></div>
+
+      <dl class="info-grid">
+        <div class="info-cell"><dt>Candidate</dt><dd id="ov-candidate">—</dd></div>
+        <div class="info-cell"><dt>Status</dt><dd id="ov-status">—</dd></div>
+        <div class="info-cell"><dt>Questions</dt><dd id="ov-questions">—</dd></div>
+        <div class="info-cell"><dt>Total Marks</dt><dd id="ov-marks">—</dd></div>
+        <div class="info-cell"><dt>Integrity Score</dt><dd id="ov-integrity">—</dd></div>
+      </dl>
+
+      <ul class="rules">
+        <li>The examination opens in fullscreen mode. Please stay in fullscreen.</li>
+        <li>Switching tabs, copying, pasting, right-clicking and leaving fullscreen are recorded.</li>
+        <li>Answer every question. Unanswered questions still count towards the total.</li>
+        <li>If the page reloads, log in again and resume — your attempt is not reset.</li>
+      </ul>
+
+      <button id="start-btn" class="btn btn-primary btn-lg" type="button">Start Examination</button>
+    </section>
+
+    <!-- STARTING -->
+    <section id="view-starting" class="card center-text" hidden>
+      <div class="spinner"></div>
+      <p>Starting your examination…</p>
+    </section>
+
+    <!-- EXAM_IN_PROGRESS / SUBMIT_CONFIRMATION -->
+    <section id="view-exam" hidden>
+      <div class="fs-banner" id="fs-banner" hidden>
+        <span>You are not in fullscreen mode. Please return to fullscreen.</span>
+        <button class="btn" id="fs-btn" type="button">Enter fullscreen</button>
+      </div>
+
+      <div class="card">
+        <div class="q-head">
+          <span id="q-position">Question 1 of 1</span>
+          <span class="q-marks" id="q-marks">0 Marks</span>
+        </div>
+        <p class="q-text" id="q-text"></p>
+        <textarea id="answer" class="answer" placeholder="Type your answer here…" spellcheck="true"></textarea>
+
+        <div class="q-foot">
+          <span class="answered-count" id="answered-count"></span>
+          <div class="group">
+            <button class="btn" id="prev-btn" type="button">Previous</button>
+            <button class="btn" id="next-btn" type="button">Next</button>
+            <button class="btn btn-primary" id="submit-btn" type="button">Submit Examination</button>
+          </div>
+        </div>
+      </div>
+
+      <nav class="q-nav" id="q-nav" aria-label="Question navigation"></nav>
+    </section>
+
+    <!-- SUBMITTING -->
+    <section id="view-submitting" class="card center-text" hidden>
+      <div class="spinner"></div>
+      <h2>Submitting your answers…</h2>
+      <p class="subtitle">Please do not close this page.</p>
+    </section>
+  </main>
+
+  <!-- Submit confirmation -->
+  <div class="modal-backdrop" id="confirm-modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="confirm-title">
+      <h2 id="confirm-title">Are you sure you want to submit?</h2>
+      <p id="confirm-text">You will not be able to change your answers after submission.</p>
+      <div class="modal-actions">
+        <button class="btn" id="confirm-cancel" type="button">Cancel</button>
+        <button class="btn btn-primary" id="confirm-submit" type="button">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/proctor.js"></script>
+  <script src="js/exam.js"></script>
+</body>
+</html>

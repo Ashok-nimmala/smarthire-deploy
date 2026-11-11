@@ -1,0 +1,7 @@
+# Pinned. boto3 is preinstalled on Lambda and must never be listed here.
+fastapi==0.115.0          # API framework, validation, /docs
+mangum==0.17.0            # ASGI -> Lambda adapter
+pydantic[email]==2.9.2    # models + email validation
+argon2-cffi==23.1.0       # argon2id password hashing
+python-multipart==0.0.12  # multipart parsing for the resume upload
+pypdf==5.1.0              # extract the resume text from the uploaded PDF

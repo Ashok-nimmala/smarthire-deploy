@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>SmartHire — Examination Result</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">SH</div>
+      <div class="brand-text">
+        <strong>SmartHire</strong>
+        <span>Proctored Assessment</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page narrow center">
+
+    <!-- EXAM_SCORING -->
+    <section id="view-scoring" class="card center-text">
+      <div class="big-check" aria-hidden="true">&#10003;</div>
+      <h1>Exam Submitted Successfully</h1>
+      <p class="subtitle">Your answers have been submitted.<br>Your examination is now being evaluated.</p>
+      <div class="spinner"></div>
+      <p>We are evaluating your answers.<br>Please wait…</p>
+      <p class="footnote" id="poll-note" hidden></p>
+    </section>
+
+    <!-- RESULT -->
+    <section id="view-result" class="card center-text" hidden>
+      <h1>Examination Complete</h1>
+      <div class="result-grid">
+        <div class="result-cell"><div class="label">Score</div><div class="value" id="r-score">—</div></div>
+        <div class="result-cell"><div class="label">Marks</div><div class="value" id="r-marks">—</div></div>
+        <div class="result-cell"><div class="label">Integrity</div><div class="value" id="r-integrity">—</div></div>
+        <div class="result-cell"><div class="label">Status</div><div class="value"><span class="badge neutral" id="r-status">—</span></div></div>
+      </div>
+      <p class="footnote" id="r-threshold" hidden></p>
+      <button class="btn" id="close-btn" type="button">Close and clear session</button>
+    </section>
+
+    <!-- ERROR -->
+    <section id="view-error" class="card center-text" hidden>
+      <h2>Unable to load result</h2>
+      <div id="error-message" class="alert alert-error" role="alert"></div>
+      <a class="btn btn-primary" href="index.html">Back to login</a>
+    </section>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/result.js"></script>
+</body>
+</html>

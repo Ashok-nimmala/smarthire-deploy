@@ -1,0 +1,16 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/app/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+
+# Backend-only secrets must never be committed or packaged
+firebase-service-account.json
+**/firebase-service-account*.json
+# Firebase client config is machine-specific; copy it in manually (see README)
+app/google-services.json

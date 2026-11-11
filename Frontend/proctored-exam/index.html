@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>SmartHire — Proctored Assessment</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">SH</div>
+      <div class="brand-text">
+        <strong>SmartHire</strong>
+        <span>Proctored Assessment</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page narrow center">
+    <div class="card">
+      <h1>Proctored Assessment</h1>
+      <p class="subtitle">Enter the details you received for your examination.</p>
+
+      <div id="form-error" class="alert alert-error" role="alert" hidden></div>
+
+      <!-- method="post" + javascript action: if JS ever fails, credentials are never placed in the URL -->
+      <form id="login-form" method="post" action="javascript:void(0)" novalidate>
+        <div class="field" id="f-exam">
+          <label for="exam_id">Exam ID</label>
+          <input id="exam_id" name="exam_id" type="text" autocomplete="off" autocapitalize="off" spellcheck="false">
+          <div class="field-error" id="e-exam" hidden></div>
+        </div>
+
+        <div class="field" id="f-email">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="username" autocapitalize="off" spellcheck="false">
+          <div class="field-error" id="e-email" hidden></div>
+        </div>
+
+        <div class="field" id="f-password">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" autocomplete="current-password">
+          <div class="field-error" id="e-password" hidden></div>
+        </div>
+
+        <button type="submit" id="login-btn" class="btn btn-primary btn-block">Enter Examination</button>
+      </form>
+
+      <p class="footnote">Your Exam ID was provided to you after screening. This examination is proctored.</p>
+    </div>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

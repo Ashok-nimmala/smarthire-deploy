@@ -1,0 +1,23 @@
+{
+  "name": "smarthire-backend-api",
+  "version": "1.0.0",
+  "description": "SmartHire AI Core Backend & AI Bridge Server",
+  "main": "local_proxy.js",
+  "scripts": {
+    "start": "node local_proxy.js",
+    "dev": "node local_proxy.js",
+    "test": "node test_in_process.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "smarthire",
+    "ai-hiring",
+    "interview-proctoring",
+    "backend"
+  ],
+  "author": "SmartHire Team",
+  "license": "ISC"
+}
+

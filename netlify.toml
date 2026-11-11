@@ -1,0 +1,29 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/candidate/*"
+  to = "/candidate/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/interviewer/*"
+  to = "/interviewer/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/proctored-exam/*"
+  to = "/proctored-exam/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+

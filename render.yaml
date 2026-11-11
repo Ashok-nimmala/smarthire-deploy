@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: smarthire-backend-api
+    runtime: node
+    rootDir: Backend
+    plan: free
+    buildCommand: ""
+    startCommand: node local_proxy.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: TARGET_BASE
+        value: https://r6j6keh5jn7ne2oykddo7k5vpi0rhdjx.lambda-url.ap-south-1.on.aws
+

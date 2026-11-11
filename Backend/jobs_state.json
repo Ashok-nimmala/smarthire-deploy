@@ -1,0 +1,1918 @@
+{
+  "cachedJobs": [
+    {
+      "jd_id": "jd_1a1c9edafaa",
+      "job_id": "jd_1a1c9edafaa",
+      "id": "jd_1a1c9edafaa",
+      "title": "Senior Frontend Architect",
+      "organization": "SmartHire",
+      "description": "React, TypeScript, Micro-frontends expert",
+      "screening_threshold": 70,
+      "exam_threshold": 60,
+      "interviewer_id": "usr_int_1a1c9edafaa",
+      "interviewer_name": "Priya Sharma",
+      "interviewer_email": "priya.sharma_1794389159849@example.com",
+      "status": "DRAFT",
+      "application_count": 1,
+      "question_count": 0,
+      "posted_at": "2026-11-11T09:25:59.850Z",
+      "expires_at": "2026-12-31T23:59:59Z",
+      "expiry": "2026-12-31T23:59:59Z",
+      "questions": []
+    },
+    {
+      "jd_id": "jd_1a1c9db9565",
+      "job_id": "jd_1a1c9db9565",
+      "id": "jd_1a1c9db9565",
+      "title": "Senior Frontend Architect",
+      "organization": "SmartHire",
+      "description": "React, TypeScript, Micro-frontends expert",
+      "screening_threshold": 70,
+      "exam_threshold": 60,
+      "interviewer_id": "usr_int_1a1c9db9565",
+      "interviewer_name": "Priya Sharma",
+      "interviewer_email": "priya.sharma_1794387973476@example.com",
+      "status": "DRAFT",
+      "application_count": 1,
+      "question_count": 0,
+      "posted_at": "2026-11-11T09:06:13.477Z",
+      "expires_at": "2026-12-31T23:59:59Z",
+      "expiry": "2026-12-31T23:59:59Z",
+      "questions": []
+    },
+    {
+      "jd_id": "jd_1a1c9c9e9c1",
+      "job_id": "jd_1a1c9c9e9c1",
+      "id": "jd_1a1c9c9e9c1",
+      "title": "backend developer",
+      "organization": "BNP Paribas",
+      "description": "About the Role\n\nWe are looking for a Frontend Developer who combines strong web fundamentals with solid problem-solving skills to build clean, responsive, accessible, and high-performance user interfaces. You will work closely with designers and backend developers in an Agile team.\n\nResponsibilities\nBuild responsive web pages using semantic HTML5, CSS3 (Flexbox, Grid), and SASS\nDevelop interactive features in JavaScript (ES6+) such as form validation, modals, and dynamic filtering\nWrite reusable, modular code by applying OOP principles and design patterns\nOptimize application performance (lazy loading, debouncing, image and CSS optimization) and improve Lighthouse scores\nEnsure cross-browser compatibility (Chrome, Firefox, Safari) and accessibility (WCAG)\nIntegrate REST APIs using the Fetch API and Async/Await\nTranslate Figma designs into pixel-perfect UI\nParticipate in code reviews, pull requests, and Agile ceremonies\nRequired Skills\nB.Tech/B.E. in Computer Science or a related field (2025 graduates preferred)\nStrong command of HTML5, CSS3, Flexbox, CSS Grid, and Responsive Design\nProficiency in JavaScript ES6+: closures, promises, async/await, event loop, DOM manipulation, prototypes\nGood understanding of Data Structures & Algorithms and time/space complexity\nSolid knowledge of OOPs concepts, SOLID principles, and design patterns (Singleton, Observer)\nExperience with Git, GitHub, VS Code, Chrome DevTools, Postman, and npm\nFamiliarity with Figma and Local Storage\nGood to Have\nProblem-solving profile on LeetCode, GeeksforGeeks, or HackerRank\nKnowledge of Java or C++\nHackathon participation or mentoring experience\nPersonal projects or portfolio showcasing UI work\nWhat We Offer\nMentorship from senior engineers and a clear growth path\nExposure to performance-focused, accessible, and scalable UI development",
+      "screening_threshold": 80,
+      "exam_threshold": 70,
+      "interviewer_id": "usr_interviewer_1a1c9c8d305",
+      "interviewer_name": "nithin",
+      "interviewer_email": "nithin@gmail.com",
+      "status": "LIVE",
+      "application_count": 1,
+      "question_count": 2,
+      "posted_at": "2026-11-11T08:46:55.425Z",
+      "expires_at": "2026-12-04T14:16",
+      "expiry": "2026-12-04T14:16",
+      "questions": [
+        {
+          "question_id": "q_1a1c9ca1b66_ccb3",
+          "id": "q_1a1c9ca1b66_ccb3",
+          "question": "What is a closure in JavaScript?",
+          "reference_answer": "A closure is a function that remembers and can access variables from its outer scope even after the outer function has finished executing.",
+          "marks": 10
+        },
+        {
+          "question_id": "q_1a1c9ca5651_9418",
+          "id": "q_1a1c9ca5651_9418",
+          "question": "How did you reduce search response time from 400 ms to 150 ms?",
+          "reference_answer": "I used hash maps for O(1) lookups and debouncing to avoid firing the search on every keystroke.",
+          "marks": 10
+        }
+      ],
+      "total_marks": 20
+    },
+    {
+      "jd_id": "jd_1a1c96e96ac",
+      "job_id": "jd_1a1c96e96ac",
+      "id": "jd_1a1c96e96ac",
+      "title": "Senior Full Stack Distributed Systems Architect",
+      "organization": "BNP Paribas",
+      "description": "Design high performance distributed architectures using microservices and event driven design.",
+      "screening_threshold": 70,
+      "exam_threshold": 60,
+      "interviewer_id": "usr_interviewer_1",
+      "interviewer_name": "Lead Technical Interviewer",
+      "interviewer_email": "interviewer@example.com",
+      "status": "LIVE",
+      "application_count": 1,
+      "question_count": 2,
+      "posted_at": "2026-11-11T07:07:10.380Z",
+      "expires_at": "2026-12-31T23:59:59Z",
+      "expiry": "2026-12-31T23:59:59Z",
+      "questions": [
+        {
+          "question_id": "q_1a1c96e96ae_2fa5",
+          "id": "q_1a1c96e96ae_2fa5",
+          "question": "Custom Q1: Explain how Raft consensus algorithm prevents split-brain scenarios and ensures leader election safety.",
+          "reference_answer": "Raft requires a majority quorum (N/2 + 1) for electing a leader and committing log entries. In a network partition, only the partition with a majority can elect a leader, preventing two leaders from committing conflicting logs.",
+          "marks": 10
+        },
+        {
+          "question_id": "q_1a1c96e96af_56b5",
+          "id": "q_1a1c96e96af_56b5",
+          "question": "Custom Q2: Compare optimistic vs pessimistic concurrency control in distributed databases with high write contention.",
+          "reference_answer": "Optimistic concurrency uses record versioning or timestamps validating on commit, best for low contention. Pessimistic concurrency uses explicit row or range locks before updates, preventing conflicts at the cost of reduced throughput.",
+          "marks": 10
+        }
+      ],
+      "total_marks": 20
+    },
+    {
+      "jd_id": "jd_1a1c94d5498",
+      "job_id": "jd_1a1c94d5498",
+      "id": "jd_1a1c94d5498",
+      "title": "Senior Distributed Cloud Engineer",
+      "organization": "BNP Paribas",
+      "description": "Seeking a Senior Cloud Engineer to build asynchronous microservices using Python, FastAPI, AWS DynamoDB, Docker, and Kubernetes. Automated testing and Linux skills required.",
+      "screening_threshold": 70,
+      "exam_threshold": 60,
+      "interviewer_id": "usr_interviewer_1a1c94d5498",
+      "interviewer_name": "Dr. Sarah Jenkins",
+      "interviewer_email": "sarah.jenkins@bnp.com",
+      "status": "LIVE",
+      "application_count": 1,
+      "question_count": 2,
+      "posted_at": "2026-11-11T06:30:50.776Z",
+      "expires_at": "2026-12-31T23:59:59Z",
+      "expiry": "2026-12-31T23:59:59Z",
+      "questions": [
+        {
+          "question_id": "q_1a1c94d5499_3256",
+          "id": "q_1a1c94d5499_3256",
+          "question": "Explain how Python FastAPI achieves high concurrency using ASGI event loops and coroutines.",
+          "reference_answer": "FastAPI runs on the Starlette ASGI toolkit with Uvicorn uvloop, executing async/await coroutines on a single-threaded non-blocking event loop while handling synchronous routes in an external thread pool.",
+          "marks": 10
+        },
+        {
+          "question_id": "q_1a1c94d5499_e03b",
+          "id": "q_1a1c94d5499_e03b",
+          "question": "Describe your strategy for zero-downtime blue-green deployments on AWS EKS with Kubernetes.",
+          "reference_answer": "Deploy duplicate blue and green target groups with Route 53 weighted records or ALB listener rule modifications, testing the new release before cutting traffic over with immediate rollback capability.",
+          "marks": 10
+        }
+      ],
+      "total_marks": 20
+    },
+    {
+      "jd_id": "jd_1a1c94d095a",
+      "job_id": "jd_1a1c94d095a",
+      "id": "jd_1a1c94d095a",
+      "title": "Senior Full Stack Distributed Systems Architect",
+      "organization": "BNP Paribas",
+      "description": "Design high performance distributed architectures using microservices and event driven design.",
+      "screening_threshold": 70,
+      "exam_threshold": 60,
+      "interviewer_id": "usr_interviewer_1",
+      "interviewer_name": "Lead Technical Interviewer",
+      "interviewer_email": "interviewer@example.com",
+      "status": "LIVE",
+      "application_count": 1,
+      "question_count": 2,
+      "posted_at": "2026-11-11T06:30:31.514Z",
+      "expires_at": "2026-12-31T23:59:59Z",
+      "expiry": "2026-12-31T23:59:59Z",
+      "questions": [
+        {
+          "question_id": "q_1a1c94d095a_2159",
+          "id": "q_1a1c94d095a_2159",
+          "question": "Custom Q1: Explain how Raft consensus algorithm prevents split-brain scenarios and ensures leader election safety.",
+          "reference_answer": "Raft requires a majority quorum (N/2 + 1) for electing a leader and committing log entries. In a network partition, only the partition with a majority can elect a leader, preventing two leaders from committing conflicting logs.",
+          "marks": 10
+        },
+        {
+          "question_id": "q_1a1c94d095b_3208",
+          "id": "q_1a1c94d095b_3208",
+          "question": "Custom Q2: Compare optimistic vs pessimistic concurrency control in distributed databases with high write contention.",
+          "reference_answer": "Optimistic concurrency uses record versioning or timestamps validating on commit, best for low contention. Pessimistic concurrency uses explicit row or range locks before updates, preventing conflicts at the cost of reduced throughput.",
+          "marks": 10
+        }
+      ],
+      "total_marks": 20
+    },
+    {
+      "jd_id": "jd_1a1c94c722d",
+      "job_id": "jd_1a1c94c722d",
+      "id": "jd_1a1c94c722d",
+      "title": "Senior Full Stack Distributed Systems Architect",
+      "organization": "BNP Paribas",
+      "description": "Design high performance distributed architectures using microservices and event driven design.",
+      "screening_threshold": 70,
+      "exam_threshold": 60,
+      "interviewer_id": "usr_interviewer_1",
+      "interviewer_name": "Lead Technical Interviewer",
+      "interviewer_email": "interviewer@example.com",
+      "status": "LIVE",
+      "application_count": 1,
+      "question_count": 2,
+      "posted_at": "2026-11-11T06:29:52.813Z",
+      "expires_at": "2026-12-31T23:59:59Z",
+      "expiry": "2026-12-31T23:59:59Z",
+      "questions": [
+        {
+          "question_id": "q_1a1c94c722e_c6a3",
+          "id": "q_1a1c94c722e_c6a3",
+          "question": "Custom Q1: Explain how Raft consensus algorithm prevents split-brain scenarios and ensures leader election safety.",
+          "reference_answer": "Raft requires a majority quorum (N/2 + 1) for electing a leader and committing log entries. In a network partition, only the partition with a majority can elect a leader, preventing two leaders from committing conflicting logs.",
+          "marks": 10
+        },
+        {
+          "question_id": "q_1a1c94c722e_605f",
+          "id": "q_1a1c94c722e_605f",
+          "question": "Custom Q2: Compare optimistic vs pessimistic concurrency control in distributed databases with high write contention.",
+          "reference_answer": "Optimistic concurrency uses record versioning or timestamps validating on commit, best for low contention. Pessimistic concurrency uses explicit row or range locks before updates, preventing conflicts at the cost of reduced throughput.",
+          "marks": 10
+        }
+      ],
+      "total_marks": 20
+    },
+    {
+      "jd_id": "jd_1a1c953ccb3",
+      "job_id": "jd_1a1c953ccb3",
+      "id": "jd_1a1c953ccb3",
+      "title": "Frontend Developer",
+      "organization": "BNP Paribas",
+      "description": "About the Role\n\nWe are looking for a Frontend Developer who combines strong web fundamentals with solid problem-solving skills to build clean, responsive, accessible, and high-performance user interfaces. You will work closely with designers and backend developers in an Agile team.\n\nResponsibilities\nBuild responsive web pages using semantic HTML5, CSS3 (Flexbox, Grid), and SASS\nDevelop interactive features in JavaScript (ES6+) such as form validation, modals, and dynamic filtering\nWrite reusable, modular code by applying OOP principles and design patterns\nOptimize application performance (lazy loading, debouncing, image and CSS optimization) and improve Lighthouse scores\nEnsure cross-browser compatibility (Chrome, Firefox, Safari) and accessibility (WCAG)\nIntegrate REST APIs using the Fetch API and Async/Await\nTranslate Figma designs into pixel-perfect UI\nParticipate in code reviews, pull requests, and Agile ceremonies\nRequired Skills\nB.Tech/B.E. in Computer Science or a related field (2025 graduates preferred)\nStrong command of HTML5, CSS3, Flexbox, CSS Grid, and Responsive Design\nProficiency in JavaScript ES6+: closures, promises, async/await, event loop, DOM manipulation, prototypes\nGood understanding of Data Structures & Algorithms and time/space complexity\nSolid knowledge of OOPs concepts, SOLID principles, and design patterns (Singleton, Observer)\nExperience with Git, GitHub, VS Code, Chrome DevTools, Postman, and npm\nFamiliarity with Figma and Local Storage\nGood to Have\nProblem-solving profile on LeetCode, GeeksforGeeks, or HackerRank\nKnowledge of Java or C++\nHackathon participation or mentoring experience\nPersonal projects or portfolio showcasing UI work\nWhat We Offer\nMentorship from senior engineers and a clear growth path\nExposure to performance-focused, accessible, and scalable UI development",
+      "screening_threshold": 70,
+      "exam_threshold": 60,
+      "interviewer_id": "usr_interviewer_1",
+      "interviewer_name": "Lead Technical Interviewer",
+      "interviewer_email": "interviewer@example.com",
+      "status": "DRAFT",
+      "application_count": 0,
+      "question_count": 6,
+      "posted_at": "2026-11-11T06:37:54.739Z",
+      "expires_at": "2026-11-13T12:07",
+      "expiry": "2026-11-13T12:07",
+      "questions": [
+        {
+          "question_id": "q_1a1c9540a47_ff47",
+          "id": "q_1a1c9540a47_ff47",
+          "question": "What is a closure in JavaScript?",
+          "reference_answer": "A closure is a function that remembers and can access variables from its outer scope even after the outer function has finished executing.",
+          "marks": 10
+        },
+        {
+          "question_id": "q_1a1c9543ac6_749e",
+          "id": "q_1a1c9543ac6_749e",
+          "question": "How did you reduce search response time from 400 ms to 150 ms?\n",
+          "reference_answer": "I used hash maps for O(1) lookups and debouncing to avoid firing the search on every keystroke.",
+          "marks": 10
+        },
+        {
+          "question_id": "q_1a1c954771f_9cd2",
+          "id": "q_1a1c954771f_9cd2",
+          "question": "What is the difference between Flexbox and CSS Grid?",
+          "reference_answer": "Flexbox lays out items in one dimension (row or column), while Grid handles two-dimensional layouts (rows and columns together).",
+          "marks": 10
+        },
+        {
+          "question_id": "q_1a1c954abed_508f",
+          "id": "q_1a1c954abed_508f",
+          "question": "How does the JavaScript event loop work?",
+          "reference_answer": "The event loop moves queued callbacks (microtasks first, then macrotasks) onto the call stack whenever the stack is empty, enabling non-blocking async behavior.",
+          "marks": 10
+        },
+        {
+          "question_id": "q_1a1c954e3c8_460e",
+          "id": "q_1a1c954e3c8_460e",
+          "question": "How did you raise your Lighthouse score from 68 to 92?",
+          "reference_answer": "By compressing images, adding lazy loading, and minifying CSS to cut load time and render-blocking resources.",
+          "marks": 10
+        },
+        {
+          "question_id": "q_1a1c9551789_e49c",
+          "id": "q_1a1c9551789_e49c",
+          "question": "What is the Observer design pattern and where would you use it?",
+          "reference_answer": "It lets multiple subscribers get notified automatically when a subject’s state changes, such as in event listeners or state-update systems.",
+          "marks": 10
+        }
+      ],
+      "total_marks": 60
+    },
+    {
+      "jd_id": "jd_1a1c9555c4c",
+      "job_id": "jd_1a1c9555c4c",
+      "id": "jd_1a1c9555c4c",
+      "title": "Frontend Developer",
+      "organization": "BNP Paribas",
+      "description": "About the Role\n\nWe are looking for a Frontend Developer who combines strong web fundamentals with solid problem-solving skills to build clean, responsive, accessible, and high-performance user interfaces. You will work closely with designers and backend developers in an Agile team.\n\nResponsibilities\nBuild responsive web pages using semantic HTML5, CSS3 (Flexbox, Grid), and SASS\nDevelop interactive features in JavaScript (ES6+) such as form validation, modals, and dynamic filtering\nWrite reusable, modular code by applying OOP principles and design patterns\nOptimize application performance (lazy loading, debouncing, image and CSS optimization) and improve Lighthouse scores\nEnsure cross-browser compatibility (Chrome, Firefox, Safari) and accessibility (WCAG)\nIntegrate REST APIs using the Fetch API and Async/Await\nTranslate Figma designs into pixel-perfect UI\nParticipate in code reviews, pull requests, and Agile ceremonies\nRequired Skills\nB.Tech/B.E. in Computer Science or a related field (2025 graduates preferred)\nStrong command of HTML5, CSS3, Flexbox, CSS Grid, and Responsive Design\nProficiency in JavaScript ES6+: closures, promises, async/await, event loop, DOM manipulation, prototypes\nGood understanding of Data Structures & Algorithms and time/space complexity\nSolid knowledge of OOPs concepts, SOLID principles, and design patterns (Singleton, Observer)\nExperience with Git, GitHub, VS Code, Chrome DevTools, Postman, and npm\nFamiliarity with Figma and Local Storage\nGood to Have\nProblem-solving profile on LeetCode, GeeksforGeeks, or HackerRank\nKnowledge of Java or C++\nHackathon participation or mentoring experience\nPersonal projects or portfolio showcasing UI work\nWhat We Offer\nMentorship from senior engineers and a clear growth path\nExposure to performance-focused, accessible, and scalable UI development",
+      "screening_threshold": 80,
+      "exam_threshold": 80,
+      "interviewer_id": "usr_interviewer_1",
+      "interviewer_name": "Lead Technical Interviewer",
+      "interviewer_email": "interviewer@example.com",
+      "status": "DRAFT",
+      "application_count": 0,
+      "question_count": 0,
+      "posted_at": "2026-11-11T06:39:37.036Z",
+      "expires_at": "2026-11-13T12:07",
+      "expiry": "2026-11-13T12:07",
+      "questions": []
+    },
+    {
+      "jd_id": "jd_1a1c9559512",
+      "job_id": "jd_1a1c9559512",
+      "id": "jd_1a1c9559512",
+      "title": "Frontend Developer",
+      "organization": "BNP Paribas",
+      "description": "About the Role\n\nWe are looking for a Frontend Developer who combines strong web fundamentals with solid problem-solving skills to build clean, responsive, accessible, and high-performance user interfaces. You will work closely with designers and backend developers in an Agile team.\n\nResponsibilities\nBuild responsive web pages using semantic HTML5, CSS3 (Flexbox, Grid), and SASS\nDevelop interactive features in JavaScript (ES6+) such as form validation, modals, and dynamic filtering\nWrite reusable, modular code by applying OOP principles and design patterns\nOptimize application performance (lazy loading, debouncing, image and CSS optimization) and improve Lighthouse scores\nEnsure cross-browser compatibility (Chrome, Firefox, Safari) and accessibility (WCAG)\nIntegrate REST APIs using the Fetch API and Async/Await\nTranslate Figma designs into pixel-perfect UI\nParticipate in code reviews, pull requests, and Agile ceremonies\nRequired Skills\nB.Tech/B.E. in Computer Science or a related field (2025 graduates preferred)\nStrong command of HTML5, CSS3, Flexbox, CSS Grid, and Responsive Design\nProficiency in JavaScript ES6+: closures, promises, async/await, event loop, DOM manipulation, prototypes\nGood understanding of Data Structures & Algorithms and time/space complexity\nSolid knowledge of OOPs concepts, SOLID principles, and design patterns (Singleton, Observer)\nExperience with Git, GitHub, VS Code, Chrome DevTools, Postman, and npm\nFamiliarity with Figma and Local Storage\nGood to Have\nProblem-solving profile on LeetCode, GeeksforGeeks, or HackerRank\nKnowledge of Java or C++\nHackathon participation or mentoring experience\nPersonal projects or portfolio showcasing UI work\nWhat We Offer\nMentorship from senior engineers and a clear growth path\nExposure to performance-focused, accessible, and scalable UI development",
+      "screening_threshold": 70,
+      "exam_threshold": 70,
+      "interviewer_id": "usr_interviewer_1",
+      "interviewer_name": "Lead Technical Interviewer",
+      "interviewer_email": "interviewer@example.com",
+      "status": "LIVE",
+      "application_count": 2,
+      "question_count": 0,
+      "posted_at": "2026-11-11T06:39:51.570Z",
+      "expires_at": "2026-11-13T12:07",
+      "expiry": "2026-11-13T12:07",
+      "questions": []
+    },
+    {
+      "jd_id": "jd_1a1c9c557b4",
+      "job_id": "jd_1a1c9c557b4",
+      "id": "jd_1a1c9c557b4",
+      "title": "Senior Full Stack Distributed Systems Architect",
+      "organization": "BNP Paribas",
+      "description": "Design high performance distributed architectures using microservices and event driven design.",
+      "screening_threshold": 70,
+      "exam_threshold": 60,
+      "interviewer_id": "usr_interviewer_1",
+      "interviewer_name": "Lead Technical Interviewer",
+      "interviewer_email": "interviewer@example.com",
+      "status": "LIVE",
+      "application_count": 1,
+      "question_count": 2,
+      "posted_at": "2026-11-11T08:41:55.892Z",
+      "expires_at": "2026-12-31T23:59:59Z",
+      "expiry": "2026-12-31T23:59:59Z",
+      "questions": [
+        {
+          "question_id": "q_1a1c9c557b5_de57",
+          "id": "q_1a1c9c557b5_de57",
+          "question": "Custom Q1: Explain how Raft consensus algorithm prevents split-brain scenarios and ensures leader election safety.",
+          "reference_answer": "Raft requires a majority quorum (N/2 + 1) for electing a leader and committing log entries. In a network partition, only the partition with a majority can elect a leader, preventing two leaders from committing conflicting logs.",
+          "marks": 10
+        },
+        {
+          "question_id": "q_1a1c9c557b6_1c7c",
+          "id": "q_1a1c9c557b6_1c7c",
+          "question": "Custom Q2: Compare optimistic vs pessimistic concurrency control in distributed databases with high write contention.",
+          "reference_answer": "Optimistic concurrency uses record versioning or timestamps validating on commit, best for low contention. Pessimistic concurrency uses explicit row or range locks before updates, preventing conflicts at the cost of reduced throughput.",
+          "marks": 10
+        }
+      ],
+      "total_marks": 20
+    },
+    {
+      "jd_id": "jd_1a1c9da6b60",
+      "job_id": "jd_1a1c9da6b60",
+      "id": "jd_1a1c9da6b60",
+      "title": "Senior Frontend Architect",
+      "organization": "SmartHire",
+      "description": "React, TypeScript, Micro-frontends expert",
+      "screening_threshold": 70,
+      "exam_threshold": 60,
+      "interviewer_id": "usr_int_1a1c9da6b5f",
+      "interviewer_name": "Priya Sharma",
+      "interviewer_email": "priya.sharma@example.com",
+      "status": "DRAFT",
+      "application_count": 1,
+      "question_count": 0,
+      "posted_at": "2026-11-11T09:04:57.184Z",
+      "expires_at": "2026-12-31T23:59:59Z",
+      "expiry": "2026-12-31T23:59:59Z",
+      "questions": []
+    },
+    {
+      "jd_id": "jd_1a1c9dbaef4",
+      "job_id": "jd_1a1c9dbaef4",
+      "id": "jd_1a1c9dbaef4",
+      "title": "Senior Full Stack Distributed Systems Architect",
+      "organization": "SmartHire",
+      "description": "Design high performance distributed architectures using microservices and event driven design.",
+      "screening_threshold": 70,
+      "exam_threshold": 60,
+      "interviewer_id": "usr_interviewer_1",
+      "interviewer_name": "Lead Technical Interviewer",
+      "interviewer_email": "interviewer@example.com",
+      "status": "LIVE",
+      "application_count": 1,
+      "question_count": 2,
+      "posted_at": "2026-11-11T09:06:20.020Z",
+      "expires_at": "2026-12-31T23:59:59Z",
+      "expiry": "2026-12-31T23:59:59Z",
+      "questions": [
+        {
+          "question_id": "q_1a1c9dbaef5_1657",
+          "id": "q_1a1c9dbaef5_1657",
+          "question": "Custom Q1: Explain how Raft consensus algorithm prevents split-brain scenarios and ensures leader election safety.",
+          "reference_answer": "Raft requires a majority quorum (N/2 + 1) for electing a leader and committing log entries. In a network partition, only the partition with a majority can elect a leader, preventing two leaders from committing conflicting logs.",
+          "marks": 10
+        },
+        {
+          "question_id": "q_1a1c9dbaef6_f19a",
+          "id": "q_1a1c9dbaef6_f19a",
+          "question": "Custom Q2: Compare optimistic vs pessimistic concurrency control in distributed databases with high write contention.",
+          "reference_answer": "Optimistic concurrency uses record versioning or timestamps validating on commit, best for low contention. Pessimistic concurrency uses explicit row or range locks before updates, preventing conflicts at the cost of reduced throughput.",
+          "marks": 10
+        }
+      ],
+      "total_marks": 20
+    },
+    {
+      "jd_id": "jd_cloud_devops_2026",
+      "title": "Cloud Infrastructure & DevOps Engineer",
+      "organization": "BNP Paribas",
+      "description": "We are seeking an experienced Cloud Infrastructure & DevOps Engineer to design, deploy, and automate robust multi-region AWS cloud architectures. Key responsibilities include orchestrating Docker containers with Kubernetes (EKS), managing Infrastructure as Code with Terraform, designing automated CI/CD deployment pipelines, and ensuring security and compliance for financial systems.\n\nRequired Skills:\n- AWS Cloud Services (EC2, S3, IAM, VPC, RDS)\n- Kubernetes & Docker containerization\n- Terraform / Infrastructure as Code\n- CI/CD (GitHub Actions, Jenkins, GitLab CI)\n- Python / Bash automation scripting\n- Linux system internals & networking",
+      "screening_threshold": 75,
+      "exam_threshold": 60,
+      "interviewer_id": "usr_interviewer_1",
+      "interviewer_name": "Lead Technical Interviewer",
+      "interviewer_email": "interviewer@example.com",
+      "status": "LIVE",
+      "application_count": 1,
+      "question_count": 2,
+      "total_marks": 20,
+      "posted_at": "2026-11-06T10:00:00Z",
+      "expires_at": "2026-12-31T23:59:59Z",
+      "questions": [
+        {
+          "id": "q_cloud_1",
+          "question": "Describe the architecture of a highly available, multi-AZ Kubernetes cluster on AWS (EKS) and how you manage stateful workloads.",
+          "reference_answer": "Deploy control plane across multiple AZs managed by AWS EKS, worker node groups in private subnets across 3 AZs with ALB ingress controller, and EBS CSI / EFS CSI drivers with persistent volumes for stateful workloads.",
+          "candidate_answer": "",
+          "marks_awarded": 0,
+          "max_marks": 10,
+          "ai_feedback": "Pending candidate submission."
+        },
+        {
+          "id": "q_cloud_2",
+          "question": "Explain how you implement Infrastructure as Code (IaC) with Terraform for automated blue-green deployments.",
+          "reference_answer": "Use remote S3 state backend with DynamoDB locking, modular VPC and ECS/EKS resource definitions, and switch traffic between blue and green target groups via Route 53 or ALB listener rules.",
+          "candidate_answer": "",
+          "marks_awarded": 0,
+          "max_marks": 10,
+          "ai_feedback": "Pending candidate submission."
+        }
+      ]
+    },
+    {
+      "jd_id": "jd_08b1d1a4502c46ba",
+      "title": "Senior Python Backend Engineer",
+      "organization": "BNP Paribas",
+      "description": "We are seeking a Senior Python Backend Engineer experienced with Python 3, FastAPI, AWS DynamoDB, REST APIs, and automated testing.",
+      "screening_threshold": 70,
+      "exam_threshold": 60,
+      "interviewer_id": "usr_interviewer_1",
+      "interviewer_name": "Lead Technical Interviewer",
+      "interviewer_email": "interviewer@example.com",
+      "status": "LIVE",
+      "application_count": 2,
+      "question_count": 2,
+      "total_marks": 20,
+      "posted_at": "2026-11-01T10:03:04.468437+00:00",
+      "expires_at": "2026-12-01T10:01:47.335750+00:00",
+      "questions": [
+        {
+          "id": "q_6582421276764b4b",
+          "question": "Explain how Python FastAPI achieves high performance compared to traditional frameworks like Flask or Django.",
+          "reference_answer": "FastAPI is built on Starlette and Pydantic, using async/await ASGI architecture on Uvicorn event loop with fast schema validation and non-blocking I/O concurrency.",
+          "candidate_answer": "",
+          "marks_awarded": 0,
+          "max_marks": 10,
+          "ai_feedback": "Pending candidate submission."
+        },
+        {
+          "id": "q_af1003127f6442ee",
+          "question": "What are the key trade-offs between relational databases and NoSQL databases like AWS DynamoDB?",
+          "reference_answer": "DynamoDB provides horizontal scaling, predictable single-digit ms latency, but lacks complex joins and ad-hoc SQL queries compared to relational DBs.",
+          "candidate_answer": "",
+          "marks_awarded": 0,
+          "max_marks": 10,
+          "ai_feedback": "Pending candidate submission."
+        }
+      ]
+    },
+    {
+      "jd_id": "jd_35f0b4e4bf934819",
+      "title": "Associate Software Engineer",
+      "organization": "radhika",
+      "description": "The candidate will be responsible for developing, testing, debugging, and maintaining software applications. The role requires knowledge of programming fundamentals, object-oriented programming, database management, web technologies, and software development methodologies.",
+      "screening_threshold": 70,
+      "exam_threshold": 60,
+      "interviewer_id": "usr_interviewer_1",
+      "interviewer_name": "Lead Technical Interviewer",
+      "interviewer_email": "interviewer@example.com",
+      "status": "LIVE",
+      "application_count": 1,
+      "question_count": 2,
+      "total_marks": 20,
+      "posted_at": "2026-11-04T06:43:10.274781+00:00",
+      "expires_at": "2026-11-05T12:12:00+00:00",
+      "questions": [
+        {
+          "id": "q_6582421276764b4b",
+          "question": "Explain how Python FastAPI achieves high performance compared to traditional frameworks like Flask or Django.",
+          "reference_answer": "FastAPI is built on Starlette and Pydantic, using async/await ASGI architecture on Uvicorn event loop with fast schema validation and non-blocking I/O concurrency.",
+          "candidate_answer": "",
+          "marks_awarded": 0,
+          "max_marks": 10,
+          "ai_feedback": "Pending candidate submission."
+        },
+        {
+          "id": "q_af1003127f6442ee",
+          "question": "What are the key trade-offs between relational databases and NoSQL databases like AWS DynamoDB?",
+          "reference_answer": "DynamoDB provides horizontal scaling, predictable single-digit ms latency, but lacks complex joins and ad-hoc SQL queries compared to relational DBs.",
+          "candidate_answer": "",
+          "marks_awarded": 0,
+          "max_marks": 10,
+          "ai_feedback": "Pending candidate submission."
+        }
+      ]
+    }
+  ],
+  "applicationsMap": {
+    "app_22a87f7ed928d004a5a44228": {
+      "app_id": "app_22a87f7ed928d004a5a44228",
+      "candidate_id": "usr_c4047f6ad7db43ee",
+      "candidate_name": "Ashok Nimmala",
+      "candidate_email": "candidate_test_1@example.com",
+      "jd_id": "jd_08b1d1a4502c46ba",
+      "job_title": "Senior Python Backend Engineer",
+      "organization": "BNP Paribas",
+      "status": "SCREENING_PASSED",
+      "status_message": "You are eligible for the written exam",
+      "applied_at": "2026-11-01T10:03:13.502344+00:00",
+      "updated_at": "2026-11-01T10:08:00.000000+00:00",
+      "screening": {
+        "done": true,
+        "passed": true,
+        "score": 85,
+        "threshold": 70,
+        "confidence": 92,
+        "summary": "Candidate exhibits strong Python, backend engineering, and API development experience matching the job description.",
+        "matched_skills": [
+          "Python",
+          "FastAPI",
+          "REST APIs",
+          "AWS DynamoDB",
+          "Databases"
+        ],
+        "missing_skills": [
+          "Automated Testing frameworks"
+        ]
+      },
+      "exam": {
+        "eligible": true,
+        "exam_id": "exam_22a87f7ed928d004a5a44228",
+        "how_to_start": "open the exam system and sign in with exam_id=exam_22a87f7ed928d004a5a44228",
+        "started": false,
+        "submitted": false,
+        "scored": false,
+        "score_percent": null,
+        "marks_awarded": null,
+        "marks_possible": 20,
+        "answers": [
+          {
+            "id": "q_6582421276764b4b",
+            "question": "Explain how Python FastAPI achieves high performance compared to traditional frameworks like Flask or Django.",
+            "reference_answer": "FastAPI is built on Starlette and Pydantic, using async/await ASGI architecture on Uvicorn event loop with fast schema validation and non-blocking I/O concurrency.",
+            "candidate_answer": "",
+            "marks_awarded": 0,
+            "max_marks": 10,
+            "ai_feedback": "Pending candidate submission."
+          },
+          {
+            "id": "q_af1003127f6442ee",
+            "question": "What are the key trade-offs between relational databases and NoSQL databases like AWS DynamoDB?",
+            "reference_answer": "DynamoDB provides horizontal scaling, predictable single-digit ms latency, but lacks complex joins and ad-hoc SQL queries compared to relational DBs.",
+            "candidate_answer": "",
+            "marks_awarded": 0,
+            "max_marks": 10,
+            "ai_feedback": "Pending candidate submission."
+          }
+        ]
+      },
+      "exam_id": "exam_22a87f7ed928d004a5a44228",
+      "next_action": "EXAM_AVAILABLE",
+      "interview": {
+        "pending": false,
+        "decision": null,
+        "interviewer": "Lead Technical Interviewer",
+        "interviewer_name": "Lead Technical Interviewer",
+        "interviewer_email": "interviewer@example.com",
+        "interviewer_id": "usr_interviewer_1",
+        "scheduled_at": null
+      },
+      "final_result": null,
+      "rejection": null
+    },
+    "app_cloud_devops_2026": {
+      "app_id": "app_cloud_devops_2026",
+      "candidate_id": "usr_c4047f6ad7db43ee",
+      "candidate_name": "Ashok Nimmala",
+      "candidate_email": "candidate_test_1@example.com",
+      "jd_id": "jd_cloud_devops_2026",
+      "job_title": "Cloud Infrastructure & DevOps Engineer",
+      "organization": "BNP Paribas",
+      "status": "FINAL_REJECTED",
+      "status_message": "Thank you for participating in the interview process. The team has decided to proceed with other candidates.",
+      "applied_at": "2026-11-06T11:00:00Z",
+      "updated_at": "2026-11-11T08:51:29.321Z",
+      "screening_threshold": 75,
+      "screening": {
+        "done": true,
+        "passed": true,
+        "score": 88,
+        "threshold": 75,
+        "confidence": 94,
+        "summary": "Candidate exhibits exceptional AWS cloud infrastructure, Kubernetes orchestration, Docker containerization, and automation script capabilities exceeding the 75% screening threshold.",
+        "matched_skills": [
+          "AWS",
+          "Cloud Architecture",
+          "Docker",
+          "Kubernetes",
+          "CI/CD",
+          "Terraform",
+          "Python",
+          "Linux"
+        ],
+        "missing_skills": []
+      },
+      "exam": {
+        "eligible": true,
+        "exam_id": "exam_cloud_devops_2026",
+        "how_to_start": "open the exam system and sign in with exam_id=exam_cloud_devops_2026",
+        "started": false,
+        "submitted": false,
+        "scored": false,
+        "score_percent": null,
+        "marks_awarded": null,
+        "marks_possible": 20,
+        "answers": [
+          {
+            "id": "q_cloud_1",
+            "question": "Describe the architecture of a highly available, multi-AZ Kubernetes cluster on AWS (EKS) and how you manage stateful workloads.",
+            "reference_answer": "Deploy control plane across multiple AZs managed by AWS EKS, worker node groups in private subnets across 3 AZs with ALB ingress controller, and EBS CSI / EFS CSI drivers with persistent volumes for stateful workloads.",
+            "candidate_answer": "",
+            "marks_awarded": 0,
+            "max_marks": 10,
+            "ai_feedback": "Pending candidate submission."
+          },
+          {
+            "id": "q_cloud_2",
+            "question": "Explain how you implement Infrastructure as Code (IaC) with Terraform for automated blue-green deployments.",
+            "reference_answer": "Use remote S3 state backend with DynamoDB locking, modular VPC and ECS/EKS resource definitions, and switch traffic between blue and green target groups via Route 53 or ALB listener rules.",
+            "candidate_answer": "",
+            "marks_awarded": 0,
+            "max_marks": 10,
+            "ai_feedback": "Pending candidate submission."
+          }
+        ]
+      },
+      "exam_id": "exam_cloud_devops_2026",
+      "next_action": "NONE",
+      "interview": {
+        "pending": false,
+        "decision": "FINAL_REJECTED",
+        "interviewer": "Lead Technical Interviewer",
+        "interviewer_name": "Lead Technical Interviewer",
+        "interviewer_email": "interviewer@example.com",
+        "interviewer_id": "usr_interviewer_1",
+        "scheduled_at": "2026-11-12T06:29:52.809Z",
+        "notes": "Candidate cleared AI screening with 88%. Assigned to Lead Technical Interviewer for comprehensive review."
+      },
+      "final_result": null,
+      "rejection": {
+        "stage": "TECHNICAL_INTERVIEW",
+        "reason": "bad"
+      }
+    },
+    "app_1a1c94c722d": {
+      "app_id": "app_1a1c94c722d",
+      "jd_id": "jd_1a1c94c722d",
+      "candidate_id": "usr_cand_1a1c94c722f",
+      "candidate_name": "Alex Dev",
+      "candidate_email": "alex_dev_custom@example.com",
+      "job_title": "Senior Full Stack Distributed Systems Architect",
+      "organization": "BNP Paribas",
+      "status": "INTERVIEW_PENDING",
+      "status_message": "Written exam passed with 90%. Your application is now assigned to the Lead Technical Interviewer for Interview Round.",
+      "applied_at": "2026-11-11T06:29:52.815Z",
+      "updated_at": "2026-11-11T06:29:52.819Z",
+      "screening_threshold": 70,
+      "screening": {
+        "done": true,
+        "passed": true,
+        "score": 84,
+        "threshold": 70,
+        "confidence": 75,
+        "summary": "Candidate resume demonstrated good technical alignment (84%) with the role requirements. Core competencies matched: Foundational Engineering Capabilities. Cleared screening threshold (70%).",
+        "matched_skills": [
+          "Foundational Software Engineering"
+        ],
+        "missing_skills": [
+          "Microservices"
+        ]
+      },
+      "exam": {
+        "eligible": true,
+        "exam_id": "exam_1a1c94c722d",
+        "how_to_start": "open the exam system and sign in with exam_id=exam_1a1c94c722d",
+        "started": true,
+        "submitted": true,
+        "scored": true,
+        "score_percent": 90,
+        "marks_awarded": 18,
+        "marks_possible": 20,
+        "answers": [
+          {
+            "id": "q_1a1c94c722e_c6a3",
+            "question_id": "q_1a1c94c722e_c6a3",
+            "order": 0,
+            "question": "Custom Q1: Explain how Raft consensus algorithm prevents split-brain scenarios and ensures leader election safety.",
+            "reference_answer": "Raft requires a majority quorum (N/2 + 1) for electing a leader and committing log entries. In a network partition, only the partition with a majority can elect a leader, preventing two leaders from committing conflicting logs.",
+            "candidate_answer": "Raft ensures leader election safety and prevents split-brain by requiring a majority quorum (N/2 + 1) for leader election and log commits. In network partitions, only the majority partition can elect a leader, preventing two conflicting leaders.",
+            "marks_awarded": 9,
+            "max_marks": 10,
+            "ai_feedback": "Strong technical answer! Accurately detailed Raft, Majority, Quorum, Leader matching reference criteria. (9/10)"
+          },
+          {
+            "id": "q_1a1c94c722e_605f",
+            "question_id": "q_1a1c94c722e_605f",
+            "order": 1,
+            "question": "Custom Q2: Compare optimistic vs pessimistic concurrency control in distributed databases with high write contention.",
+            "reference_answer": "Optimistic concurrency uses record versioning or timestamps validating on commit, best for low contention. Pessimistic concurrency uses explicit row or range locks before updates, preventing conflicts at the cost of reduced throughput.",
+            "candidate_answer": "Optimistic concurrency uses version numbers validated during commit, ideal for low write contention. Pessimistic concurrency locks rows or ranges beforehand to prevent conflicts under high write contention at the cost of lower throughput.",
+            "marks_awarded": 9,
+            "max_marks": 10,
+            "ai_feedback": "Strong technical answer! Accurately detailed Optimistic, Concurrency, Commit, Low matching reference criteria. (9/10)"
+          }
+        ],
+        "passed": true
+      },
+      "exam_id": "exam_1a1c94c722d",
+      "next_action": "INTERVIEW_PENDING",
+      "interview": {
+        "pending": true,
+        "decision": null,
+        "interviewer": "Lead Technical Interviewer",
+        "interviewer_name": "Lead Technical Interviewer",
+        "interviewer_email": "interviewer@example.com",
+        "interviewer_id": "usr_interviewer_1",
+        "scheduled_at": "2026-11-12T06:29:52.819Z"
+      },
+      "final_result": null,
+      "rejection": null
+    },
+    "app_1a1c94d095a": {
+      "app_id": "app_1a1c94d095a",
+      "jd_id": "jd_1a1c94d095a",
+      "candidate_id": "usr_cand_1a1c94d095b",
+      "candidate_name": "Alex Dev",
+      "candidate_email": "alex_dev_custom@example.com",
+      "job_title": "Senior Full Stack Distributed Systems Architect",
+      "organization": "BNP Paribas",
+      "status": "INTERVIEW_PENDING",
+      "status_message": "Written exam passed with 90%. Your application is now assigned to the Lead Technical Interviewer for Interview Round.",
+      "applied_at": "2026-11-11T06:30:31.516Z",
+      "updated_at": "2026-11-11T06:30:31.519Z",
+      "screening_threshold": 70,
+      "screening": {
+        "done": true,
+        "passed": true,
+        "score": 84,
+        "threshold": 70,
+        "confidence": 75,
+        "summary": "Candidate resume demonstrated good technical alignment (84%) with the role requirements. Core competencies matched: Foundational Engineering Capabilities. Cleared screening threshold (70%).",
+        "matched_skills": [
+          "Foundational Software Engineering"
+        ],
+        "missing_skills": [
+          "Microservices"
+        ]
+      },
+      "exam": {
+        "eligible": true,
+        "exam_id": "exam_1a1c94d095a",
+        "how_to_start": "open the exam system and sign in with exam_id=exam_1a1c94d095a",
+        "started": true,
+        "submitted": true,
+        "scored": true,
+        "score_percent": 90,
+        "marks_awarded": 18,
+        "marks_possible": 20,
+        "answers": [
+          {
+            "id": "q_1a1c94d095a_2159",
+            "question_id": "q_1a1c94d095a_2159",
+            "order": 0,
+            "question": "Custom Q1: Explain how Raft consensus algorithm prevents split-brain scenarios and ensures leader election safety.",
+            "reference_answer": "Raft requires a majority quorum (N/2 + 1) for electing a leader and committing log entries. In a network partition, only the partition with a majority can elect a leader, preventing two leaders from committing conflicting logs.",
+            "candidate_answer": "Raft ensures leader election safety and prevents split-brain by requiring a majority quorum (N/2 + 1) for leader election and log commits. In network partitions, only the majority partition can elect a leader, preventing two conflicting leaders.",
+            "marks_awarded": 9,
+            "max_marks": 10,
+            "ai_feedback": "Strong technical answer! Accurately detailed Raft, Majority, Quorum, Leader matching reference criteria. (9/10)"
+          },
+          {
+            "id": "q_1a1c94d095b_3208",
+            "question_id": "q_1a1c94d095b_3208",
+            "order": 1,
+            "question": "Custom Q2: Compare optimistic vs pessimistic concurrency control in distributed databases with high write contention.",
+            "reference_answer": "Optimistic concurrency uses record versioning or timestamps validating on commit, best for low contention. Pessimistic concurrency uses explicit row or range locks before updates, preventing conflicts at the cost of reduced throughput.",
+            "candidate_answer": "Optimistic concurrency uses version numbers validated during commit, ideal for low write contention. Pessimistic concurrency locks rows or ranges beforehand to prevent conflicts under high write contention at the cost of lower throughput.",
+            "marks_awarded": 9,
+            "max_marks": 10,
+            "ai_feedback": "Strong technical answer! Accurately detailed Optimistic, Concurrency, Commit, Low matching reference criteria. (9/10)"
+          }
+        ],
+        "passed": true
+      },
+      "exam_id": "exam_1a1c94d095a",
+      "next_action": "INTERVIEW_PENDING",
+      "interview": {
+        "pending": true,
+        "decision": null,
+        "interviewer": "Lead Technical Interviewer",
+        "interviewer_name": "Lead Technical Interviewer",
+        "interviewer_email": "interviewer@example.com",
+        "interviewer_id": "usr_interviewer_1",
+        "scheduled_at": "2026-11-12T06:30:31.519Z"
+      },
+      "final_result": null,
+      "rejection": null
+    },
+    "app_08b1d1a4502c46ba": {
+      "app_id": "app_08b1d1a4502c46ba",
+      "jd_id": "jd_08b1d1a4502c46ba",
+      "candidate_id": "usr_cand_1a1c94d3e61",
+      "candidate_name": "John Doe",
+      "candidate_email": "john.doe.1794378645089@example.com",
+      "job_title": "Senior Python Backend Engineer",
+      "organization": "BNP Paribas",
+      "status": "SCREENING_PASSED",
+      "status_message": "Your resume cleared AI screening with 91% (Threshold: 70%). You are eligible for the written exam.",
+      "applied_at": "2026-11-11T06:30:45.091Z",
+      "updated_at": "2026-11-11T06:30:45.091Z",
+      "screening_threshold": 70,
+      "screening": {
+        "done": true,
+        "passed": true,
+        "score": 91,
+        "threshold": 70,
+        "confidence": 84,
+        "summary": "Candidate resume demonstrated good technical alignment (91%) with the role requirements. Core competencies matched: Python, REST APIs, Automated Testing. Cleared screening threshold (70%).",
+        "matched_skills": [
+          "Python",
+          "REST APIs",
+          "Automated Testing"
+        ],
+        "missing_skills": [
+          "FastAPI",
+          "AWS",
+          "DynamoDB"
+        ]
+      },
+      "exam": {
+        "eligible": true,
+        "exam_id": "exam_08b1d1a4502c46ba",
+        "how_to_start": "open the exam system and sign in with exam_id=exam_08b1d1a4502c46ba",
+        "started": false,
+        "submitted": false,
+        "scored": false,
+        "score_percent": null,
+        "marks_awarded": null,
+        "marks_possible": 20,
+        "answers": [
+          {
+            "id": "q_6582421276764b4b",
+            "question_id": "q_6582421276764b4b",
+            "order": 0,
+            "question": "Explain how Python FastAPI achieves high performance compared to traditional frameworks like Flask or Django.",
+            "reference_answer": "FastAPI is built on Starlette and Pydantic, using async/await ASGI architecture on Uvicorn event loop with fast schema validation and non-blocking I/O concurrency.",
+            "candidate_answer": "",
+            "marks_awarded": 0,
+            "max_marks": 10,
+            "ai_feedback": "Pending candidate submission."
+          },
+          {
+            "id": "q_af1003127f6442ee",
+            "question_id": "q_af1003127f6442ee",
+            "order": 1,
+            "question": "What are the key trade-offs between relational databases and NoSQL databases like AWS DynamoDB?",
+            "reference_answer": "DynamoDB provides horizontal scaling, predictable single-digit ms latency, but lacks complex joins and ad-hoc SQL queries compared to relational DBs.",
+            "candidate_answer": "",
+            "marks_awarded": 0,
+            "max_marks": 10,
+            "ai_feedback": "Pending candidate submission."
+          }
+        ]
+      },
+      "exam_id": "exam_08b1d1a4502c46ba",
+      "next_action": "EXAM_AVAILABLE",
+      "interview": {
+        "pending": false,
+        "decision": null,
+        "interviewer": "Lead Technical Interviewer",
+        "interviewer_name": "Lead Technical Interviewer",
+        "interviewer_email": "interviewer@example.com",
+        "interviewer_id": "usr_interviewer_1",
+        "scheduled_at": null
+      },
+      "final_result": null,
+      "rejection": null
+    },
+    "app_1a1c94d5498": {
+      "app_id": "app_1a1c94d5498",
+      "jd_id": "jd_1a1c94d5498",
+      "candidate_id": "usr_cand_1a1c94d5499",
+      "candidate_name": "Vikram Sharma",
+      "candidate_email": "vikram.sharma@example.com",
+      "job_title": "Senior Distributed Cloud Engineer",
+      "organization": "BNP Paribas",
+      "status": "ACCEPTED",
+      "status_message": "Congratulations! You have successfully cleared the Technical Interview and have been selected for the offer.",
+      "applied_at": "2026-11-11T06:30:50.778Z",
+      "updated_at": "2026-11-11T06:30:50.782Z",
+      "screening_threshold": 70,
+      "screening": {
+        "done": true,
+        "passed": true,
+        "score": 87,
+        "threshold": 70,
+        "confidence": 87,
+        "summary": "Candidate resume demonstrated good technical alignment (87%) with the role requirements. Core competencies matched: Python, Docker, Linux, Automated Testing. Cleared screening threshold (70%).",
+        "matched_skills": [
+          "Python",
+          "Docker",
+          "Linux",
+          "Automated Testing"
+        ],
+        "missing_skills": [
+          "FastAPI",
+          "AWS",
+          "Kubernetes",
+          "DynamoDB",
+          "Microservices"
+        ]
+      },
+      "exam": {
+        "eligible": true,
+        "exam_id": "exam_1a1c94d5498",
+        "how_to_start": "open the exam system and sign in with exam_id=exam_1a1c94d5498",
+        "started": true,
+        "submitted": true,
+        "scored": true,
+        "score_percent": 95,
+        "marks_awarded": 19,
+        "marks_possible": 20,
+        "answers": [
+          {
+            "id": "q_1a1c94d5499_3256",
+            "question_id": "q_1a1c94d5499_3256",
+            "order": 0,
+            "question": "Explain how Python FastAPI achieves high concurrency using ASGI event loops and coroutines.",
+            "reference_answer": "FastAPI runs on the Starlette ASGI toolkit with Uvicorn uvloop, executing async/await coroutines on a single-threaded non-blocking event loop while handling synchronous routes in an external thread pool.",
+            "candidate_answer": "FastAPI is built on the Starlette ASGI framework and Uvicorn uvloop. It uses async/await coroutines to handle I/O concurrently on an event loop without blocking execution, while handling synchronous calls in a background threadpool.",
+            "marks_awarded": 10,
+            "max_marks": 10,
+            "ai_feedback": "Comprehensive and outstanding answer covering all key concepts and matching the reference criteria: Fastapi, Starlette, Asgi, Uvicorn. (10/10)"
+          },
+          {
+            "id": "q_1a1c94d5499_e03b",
+            "question_id": "q_1a1c94d5499_e03b",
+            "order": 1,
+            "question": "Describe your strategy for zero-downtime blue-green deployments on AWS EKS with Kubernetes.",
+            "reference_answer": "Deploy duplicate blue and green target groups with Route 53 weighted records or ALB listener rule modifications, testing the new release before cutting traffic over with immediate rollback capability.",
+            "candidate_answer": "For blue-green deployments on AWS EKS, we run two identical environments. An ALB with listener rules or Route 53 weighted routing directs traffic from blue to green once automated sanity checks pass, allowing instantaneous zero-downtime cutover and easy rollback.",
+            "marks_awarded": 9,
+            "max_marks": 10,
+            "ai_feedback": "Strong technical answer! Accurately detailed Deploy, Blue, Green, Route matching reference criteria. (9/10)"
+          }
+        ],
+        "passed": true
+      },
+      "exam_id": "exam_1a1c94d5498",
+      "next_action": "OFFER_EXTENDED",
+      "interview": {
+        "pending": false,
+        "decision": "ACCEPTED",
+        "interviewer": "Lead Technical Interviewer",
+        "interviewer_name": "Lead Technical Interviewer",
+        "interviewer_email": "interviewer@example.com",
+        "interviewer_id": "usr_interviewer_1a1c94d5498",
+        "scheduled_at": "2026-11-12T06:30:50.781Z"
+      },
+      "final_result": null,
+      "rejection": null
+    },
+    "app_35f0b4e4bf934819": {
+      "app_id": "app_35f0b4e4bf934819",
+      "jd_id": "jd_35f0b4e4bf934819",
+      "candidate_id": "usr_cand_1a1c950bbbf",
+      "candidate_name": "teja",
+      "candidate_email": "teja@gmail.com",
+      "job_title": "Associate Software Engineer",
+      "organization": "radhika",
+      "status": "EXAM_REJECTED",
+      "status_message": "Written exam score of 0% did not meet the required 60% passing threshold.",
+      "applied_at": "2026-11-11T06:35:22.441Z",
+      "updated_at": "2026-11-11T06:35:36.589Z",
+      "screening_threshold": 70,
+      "screening": {
+        "done": true,
+        "passed": true,
+        "score": 84,
+        "threshold": 70,
+        "confidence": 75,
+        "summary": "Candidate resume demonstrated good technical alignment (84%) with the role requirements. Core competencies matched: Foundational Engineering Capabilities. Cleared screening threshold (70%).",
+        "matched_skills": [
+          "Foundational Software Engineering"
+        ],
+        "missing_skills": [
+          "Automated Testing"
+        ]
+      },
+      "exam": {
+        "eligible": true,
+        "exam_id": "exam_35f0b4e4bf934819",
+        "how_to_start": "open the exam system and sign in with exam_id=exam_35f0b4e4bf934819",
+        "started": true,
+        "submitted": true,
+        "scored": true,
+        "score_percent": 0,
+        "marks_awarded": 0,
+        "marks_possible": 20,
+        "answers": [
+          {
+            "id": "q_6582421276764b4b",
+            "question_id": "q_6582421276764b4b",
+            "order": 0,
+            "question": "Explain how Python FastAPI achieves high performance compared to traditional frameworks like Flask or Django.",
+            "reference_answer": "FastAPI is built on Starlette and Pydantic, using async/await ASGI architecture on Uvicorn event loop with fast schema validation and non-blocking I/O concurrency.",
+            "candidate_answer": "",
+            "marks_awarded": 0,
+            "max_marks": 10,
+            "ai_feedback": "No substantive answer provided. Failed to demonstrate required technical knowledge. (0/10)"
+          },
+          {
+            "id": "q_af1003127f6442ee",
+            "question_id": "q_af1003127f6442ee",
+            "order": 1,
+            "question": "What are the key trade-offs between relational databases and NoSQL databases like AWS DynamoDB?",
+            "reference_answer": "DynamoDB provides horizontal scaling, predictable single-digit ms latency, but lacks complex joins and ad-hoc SQL queries compared to relational DBs.",
+            "candidate_answer": "",
+            "marks_awarded": 0,
+            "max_marks": 10,
+            "ai_feedback": "No substantive answer provided. Failed to demonstrate required technical knowledge. (0/10)"
+          }
+        ],
+        "passed": false
+      },
+      "exam_id": "exam_35f0b4e4bf934819",
+      "next_action": "NONE",
+      "interview": {
+        "pending": false,
+        "decision": null,
+        "interviewer": "Lead Technical Interviewer",
+        "interviewer_name": "Lead Technical Interviewer",
+        "interviewer_email": "interviewer@example.com",
+        "interviewer_id": "usr_interviewer_1",
+        "scheduled_at": null
+      },
+      "final_result": null,
+      "rejection": {
+        "stage": "WRITTEN_EXAM",
+        "reason": "Written exam score of 0% (0/20 marks) did not meet the required 60% threshold."
+      }
+    },
+    "app_1a1c9559512": {
+      "app_id": "app_1a1c9559512",
+      "jd_id": "jd_1a1c9559512",
+      "candidate_id": "usr_cand_1a1c9594887",
+      "candidate_name": "karthik",
+      "candidate_email": "karthik@gmail.com",
+      "job_title": "Frontend Developer",
+      "organization": "BNP Paribas",
+      "status": "ACCEPTED",
+      "status_message": "Congratulations! You have successfully cleared the Technical Interview and have been selected for the offer.",
+      "applied_at": "2026-11-11T06:44:06.900Z",
+      "updated_at": "2026-11-11T06:50:09.625Z",
+      "screening_threshold": 70,
+      "screening": {
+        "done": true,
+        "passed": true,
+        "score": 84,
+        "threshold": 70,
+        "confidence": 75,
+        "summary": "Candidate resume demonstrated good technical alignment (84%) with the role requirements. Core competencies matched: Foundational Engineering Capabilities. Cleared screening threshold (70%).",
+        "matched_skills": [
+          "Foundational Software Engineering"
+        ],
+        "missing_skills": [
+          "Java",
+          "JavaScript / TypeScript",
+          "REST APIs",
+          "Data Structures & Algorithms",
+          "UI/UX & Design"
+        ]
+      },
+      "exam": {
+        "eligible": true,
+        "exam_id": "exam_1a1c9559512",
+        "how_to_start": "open the exam system and sign in with exam_id=exam_1a1c9559512",
+        "started": true,
+        "submitted": true,
+        "scored": true,
+        "score_percent": 98,
+        "marks_awarded": 59,
+        "marks_possible": 60,
+        "answers": [
+          {
+            "id": "q_1a1c9540a47_ff47",
+            "question_id": "q_1a1c9540a47_ff47",
+            "order": 0,
+            "question": "What is a closure in JavaScript?",
+            "reference_answer": "A closure is a function that remembers and can access variables from its outer scope even after the outer function has finished executing.",
+            "candidate_answer": "A closure is a function that remembers and can access variables from its outer scope even after the outer function has finished executing",
+            "marks_awarded": 10,
+            "max_marks": 10,
+            "ai_feedback": "Comprehensive and outstanding answer covering all key concepts and matching the reference criteria: Closure, Function, Remembers, Access. (10/10)"
+          },
+          {
+            "id": "q_1a1c9543ac6_749e",
+            "question_id": "q_1a1c9543ac6_749e",
+            "order": 1,
+            "question": "How did you reduce search response time from 400 ms to 150 ms?\n",
+            "reference_answer": "I used hash maps for O(1) lookups and debouncing to avoid firing the search on every keystroke.",
+            "candidate_answer": "I used hash maps for O(1) lookups and debouncing to avoid firing the search on every keystroke.",
+            "marks_awarded": 10,
+            "max_marks": 10,
+            "ai_feedback": "Comprehensive and outstanding answer covering all key concepts and matching the reference criteria: Hash, Maps, Lookups, Debouncing. (10/10)"
+          },
+          {
+            "id": "q_1a1c954771f_9cd2",
+            "question_id": "q_1a1c954771f_9cd2",
+            "order": 2,
+            "question": "What is the difference between Flexbox and CSS Grid?",
+            "reference_answer": "Flexbox lays out items in one dimension (row or column), while Grid handles two-dimensional layouts (rows and columns together).",
+            "candidate_answer": "Flecbox lays out items in one dimension ,while grid handles two-dimensional layouts.",
+            "marks_awarded": 9,
+            "max_marks": 10,
+            "ai_feedback": "Strong technical answer! Accurately detailed Lays, Out, Items, One matching reference criteria. (9/10)"
+          },
+          {
+            "id": "q_1a1c954abed_508f",
+            "question_id": "q_1a1c954abed_508f",
+            "order": 3,
+            "question": "How does the JavaScript event loop work?",
+            "reference_answer": "The event loop moves queued callbacks (microtasks first, then macrotasks) onto the call stack whenever the stack is empty, enabling non-blocking async behavior.",
+            "candidate_answer": "The event loop moves queued calls callbacks onto the call stack whenevr the stack is empty ,enabling non-blocking async behavior.",
+            "marks_awarded": 10,
+            "max_marks": 10,
+            "ai_feedback": "Comprehensive and outstanding answer covering all key concepts and matching the reference criteria: Event, Loop, Moves, Queued. (10/10)"
+          },
+          {
+            "id": "q_1a1c954e3c8_460e",
+            "question_id": "q_1a1c954e3c8_460e",
+            "order": 4,
+            "question": "How did you raise your Lighthouse score from 68 to 92?",
+            "reference_answer": "By compressing images, adding lazy loading, and minifying CSS to cut load time and render-blocking resources.",
+            "candidate_answer": "By compressing images,adding lazy loading and magnify CSS to out oad time and render-blocking resources.",
+            "marks_awarded": 10,
+            "max_marks": 10,
+            "ai_feedback": "Comprehensive and outstanding answer covering all key concepts and matching the reference criteria: Compressing, Images, Adding, Lazy. (10/10)"
+          },
+          {
+            "id": "q_1a1c9551789_e49c",
+            "question_id": "q_1a1c9551789_e49c",
+            "order": 5,
+            "question": "What is the Observer design pattern and where would you use it?",
+            "reference_answer": "It lets multiple subscribers get notified automatically when a subject’s state changes, such as in event listeners or state-update systems.",
+            "candidate_answer": " multiple subscribers get notified automatically when a subject’s state changes, such as in event listeners or state-update systems.",
+            "marks_awarded": 10,
+            "max_marks": 10,
+            "ai_feedback": "Comprehensive and outstanding answer covering all key concepts and matching the reference criteria: Multiple, Subscribers, Get, Notified. (10/10)"
+          }
+        ],
+        "passed": true
+      },
+      "exam_id": "exam_1a1c9559512",
+      "next_action": "OFFER_EXTENDED",
+      "interview": {
+        "pending": false,
+        "decision": "ACCEPTED",
+        "interviewer": "Lead Technical Interviewer",
+        "interviewer_name": "Lead Technical Interviewer",
+        "interviewer_email": "interviewer@example.com",
+        "interviewer_id": "usr_interviewer_1",
+        "scheduled_at": "2026-11-12T06:49:21.847Z"
+      },
+      "final_result": null,
+      "rejection": null
+    },
+    "app_1a1c96e96ac": {
+      "app_id": "app_1a1c96e96ac",
+      "jd_id": "jd_1a1c96e96ac",
+      "candidate_id": "usr_cand_1a1c96e96af",
+      "candidate_name": "Alex Dev",
+      "candidate_email": "alex_dev_custom@example.com",
+      "job_title": "Senior Full Stack Distributed Systems Architect",
+      "organization": "BNP Paribas",
+      "status": "INTERVIEW_PENDING",
+      "status_message": "Written exam passed with 90%. Your application is now assigned to the Lead Technical Interviewer for Interview Round.",
+      "applied_at": "2026-11-11T07:07:10.384Z",
+      "updated_at": "2026-11-11T07:07:10.390Z",
+      "screening_threshold": 70,
+      "screening": {
+        "done": true,
+        "passed": true,
+        "score": 84,
+        "threshold": 70,
+        "confidence": 75,
+        "summary": "Candidate resume demonstrated good technical alignment (84%) with the role requirements. Core competencies matched: Foundational Engineering Capabilities. Cleared screening threshold (70%).",
+        "matched_skills": [
+          "Foundational Software Engineering"
+        ],
+        "missing_skills": [
+          "Microservices"
+        ]
+      },
+      "exam": {
+        "eligible": true,
+        "exam_id": "exam_1a1c96e96ac",
+        "how_to_start": "open the exam system and sign in with exam_id=exam_1a1c96e96ac",
+        "started": true,
+        "submitted": true,
+        "scored": true,
+        "score_percent": 90,
+        "marks_awarded": 18,
+        "marks_possible": 20,
+        "answers": [
+          {
+            "id": "q_1a1c96e96ae_2fa5",
+            "question_id": "q_1a1c96e96ae_2fa5",
+            "order": 0,
+            "question": "Custom Q1: Explain how Raft consensus algorithm prevents split-brain scenarios and ensures leader election safety.",
+            "reference_answer": "Raft requires a majority quorum (N/2 + 1) for electing a leader and committing log entries. In a network partition, only the partition with a majority can elect a leader, preventing two leaders from committing conflicting logs.",
+            "candidate_answer": "Raft ensures leader election safety and prevents split-brain by requiring a majority quorum (N/2 + 1) for leader election and log commits. In network partitions, only the majority partition can elect a leader, preventing two conflicting leaders.",
+            "marks_awarded": 9,
+            "max_marks": 10,
+            "ai_feedback": "Strong technical answer! Accurately detailed Raft, Majority, Quorum, Leader matching reference criteria. (9/10)"
+          },
+          {
+            "id": "q_1a1c96e96af_56b5",
+            "question_id": "q_1a1c96e96af_56b5",
+            "order": 1,
+            "question": "Custom Q2: Compare optimistic vs pessimistic concurrency control in distributed databases with high write contention.",
+            "reference_answer": "Optimistic concurrency uses record versioning or timestamps validating on commit, best for low contention. Pessimistic concurrency uses explicit row or range locks before updates, preventing conflicts at the cost of reduced throughput.",
+            "candidate_answer": "Optimistic concurrency uses version numbers validated during commit, ideal for low write contention. Pessimistic concurrency locks rows or ranges beforehand to prevent conflicts under high write contention at the cost of lower throughput.",
+            "marks_awarded": 9,
+            "max_marks": 10,
+            "ai_feedback": "Strong technical answer! Accurately detailed Optimistic, Concurrency, Commit, Low matching reference criteria. (9/10)"
+          }
+        ],
+        "passed": true
+      },
+      "exam_id": "exam_1a1c96e96ac",
+      "next_action": "INTERVIEW_PENDING",
+      "interview": {
+        "pending": true,
+        "decision": null,
+        "interviewer": "Lead Technical Interviewer",
+        "interviewer_name": "Lead Technical Interviewer",
+        "interviewer_email": "interviewer@example.com",
+        "interviewer_id": "usr_interviewer_1",
+        "scheduled_at": "2026-11-12T07:07:10.390Z"
+      },
+      "final_result": null,
+      "rejection": null
+    },
+    "app_1a1c9c557b4": {
+      "app_id": "app_1a1c9c557b4",
+      "jd_id": "jd_1a1c9c557b4",
+      "candidate_id": "usr_cand_1a1c9c557b7",
+      "candidate_name": "Alex Dev",
+      "candidate_email": "alex_dev_custom@example.com",
+      "job_title": "Senior Full Stack Distributed Systems Architect",
+      "organization": "BNP Paribas",
+      "status": "INTERVIEW_PENDING",
+      "status_message": "Written exam passed with 90%. Your application is now assigned to the Lead Technical Interviewer for Interview Round.",
+      "applied_at": "2026-11-11T08:41:55.895Z",
+      "updated_at": "2026-11-11T08:41:55.901Z",
+      "screening_threshold": 70,
+      "screening": {
+        "done": true,
+        "passed": true,
+        "score": 84,
+        "threshold": 70,
+        "confidence": 75,
+        "summary": "Candidate resume demonstrated good technical alignment (84%) with the role requirements. Core competencies matched: Foundational Engineering Capabilities. Cleared screening threshold (70%).",
+        "matched_skills": [
+          "Foundational Software Engineering"
+        ],
+        "missing_skills": [
+          "Microservices"
+        ]
+      },
+      "exam": {
+        "eligible": true,
+        "exam_id": "exam_1a1c9c557b4",
+        "how_to_start": "open the exam system and sign in with exam_id=exam_1a1c9c557b4",
+        "started": true,
+        "submitted": true,
+        "scored": true,
+        "score_percent": 90,
+        "marks_awarded": 18,
+        "marks_possible": 20,
+        "answers": [
+          {
+            "id": "q_1a1c9c557b5_de57",
+            "question_id": "q_1a1c9c557b5_de57",
+            "order": 0,
+            "question": "Custom Q1: Explain how Raft consensus algorithm prevents split-brain scenarios and ensures leader election safety.",
+            "reference_answer": "Raft requires a majority quorum (N/2 + 1) for electing a leader and committing log entries. In a network partition, only the partition with a majority can elect a leader, preventing two leaders from committing conflicting logs.",
+            "candidate_answer": "Raft ensures leader election safety and prevents split-brain by requiring a majority quorum (N/2 + 1) for leader election and log commits. In network partitions, only the majority partition can elect a leader, preventing two conflicting leaders.",
+            "marks_awarded": 9,
+            "max_marks": 10,
+            "ai_feedback": "Strong technical answer! Accurately detailed Raft, Majority, Quorum, Leader matching reference criteria. (9/10)"
+          },
+          {
+            "id": "q_1a1c9c557b6_1c7c",
+            "question_id": "q_1a1c9c557b6_1c7c",
+            "order": 1,
+            "question": "Custom Q2: Compare optimistic vs pessimistic concurrency control in distributed databases with high write contention.",
+            "reference_answer": "Optimistic concurrency uses record versioning or timestamps validating on commit, best for low contention. Pessimistic concurrency uses explicit row or range locks before updates, preventing conflicts at the cost of reduced throughput.",
+            "candidate_answer": "Optimistic concurrency uses version numbers validated during commit, ideal for low write contention. Pessimistic concurrency locks rows or ranges beforehand to prevent conflicts under high write contention at the cost of lower throughput.",
+            "marks_awarded": 9,
+            "max_marks": 10,
+            "ai_feedback": "Strong technical answer! Accurately detailed Optimistic, Concurrency, Commit, Low matching reference criteria. (9/10)"
+          }
+        ],
+        "passed": true
+      },
+      "exam_id": "exam_1a1c9c557b4",
+      "next_action": "INTERVIEW_PENDING",
+      "interview": {
+        "pending": true,
+        "decision": null,
+        "interviewer": "Lead Technical Interviewer",
+        "interviewer_name": "Lead Technical Interviewer",
+        "interviewer_email": "interviewer@example.com",
+        "interviewer_id": "usr_interviewer_1",
+        "scheduled_at": "2026-11-12T08:41:55.900Z"
+      },
+      "final_result": null,
+      "rejection": null
+    },
+    "app_1a1c9c9e9c1": {
+      "app_id": "app_1a1c9c9e9c1",
+      "jd_id": "jd_1a1c9c9e9c1",
+      "candidate_id": "usr_c4047f6ad7db43ee",
+      "candidate_name": "Ashok Nimmala",
+      "candidate_email": "candidate_test_1@example.com",
+      "job_title": "backend developer",
+      "organization": "BNP Paribas",
+      "status": "ACCEPTED",
+      "status_message": "Congratulations! You have successfully cleared the Technical Interview and have been selected for the offer.",
+      "applied_at": "2026-11-11T08:47:50.539Z",
+      "updated_at": "2026-11-11T08:50:21.072Z",
+      "screening_threshold": 80,
+      "screening": {
+        "done": true,
+        "passed": true,
+        "score": 84,
+        "threshold": 80,
+        "confidence": 75,
+        "summary": "Candidate resume demonstrated good technical alignment (84%) with the role requirements. Core competencies matched: Foundational Engineering Capabilities. Cleared screening threshold (80%).",
+        "matched_skills": [
+          "Foundational Software Engineering"
+        ],
+        "missing_skills": [
+          "Java",
+          "JavaScript / TypeScript",
+          "REST APIs",
+          "Data Structures & Algorithms",
+          "UI/UX & Design"
+        ]
+      },
+      "exam": {
+        "eligible": true,
+        "exam_id": "exam_1a1c9c9e9c1",
+        "how_to_start": "open the exam system and sign in with exam_id=exam_1a1c9c9e9c1",
+        "started": true,
+        "submitted": true,
+        "scored": true,
+        "score_percent": 80,
+        "marks_awarded": 16,
+        "marks_possible": 20,
+        "answers": [
+          {
+            "id": "q_1a1c9ca1b66_ccb3",
+            "question_id": "q_1a1c9ca1b66_ccb3",
+            "order": 0,
+            "question": "What is a closure in JavaScript?",
+            "reference_answer": "A closure is a function that remembers and can access variables from its outer scope even after the outer function has finished executing.",
+            "candidate_answer": "A closure is a combination of a function bundked together with references to its surrounding state",
+            "marks_awarded": 6,
+            "max_marks": 10,
+            "ai_feedback": "Good answer. Addressed key concepts including Closure & Function, covering foundational reference criteria. (6/10)"
+          },
+          {
+            "id": "q_1a1c9ca5651_9418",
+            "question_id": "q_1a1c9ca5651_9418",
+            "order": 1,
+            "question": "How did you reduce search response time from 400 ms to 150 ms?",
+            "reference_answer": "I used hash maps for O(1) lookups and debouncing to avoid firing the search on every keystroke.",
+            "candidate_answer": "I used hash maps for O(1) lookups and debouncing to avoid firing the search on every keystroke.",
+            "marks_awarded": 10,
+            "max_marks": 10,
+            "ai_feedback": "Comprehensive and outstanding answer covering all key concepts and matching the reference criteria: Hash, Maps, Lookups, Debouncing. (10/10)"
+          }
+        ],
+        "passed": true
+      },
+      "exam_id": "exam_1a1c9c9e9c1",
+      "next_action": "OFFER_EXTENDED",
+      "interview": {
+        "pending": false,
+        "decision": "ACCEPTED",
+        "interviewer": "Lead Technical Interviewer",
+        "interviewer_name": "Lead Technical Interviewer",
+        "interviewer_email": "interviewer@example.com",
+        "interviewer_id": "usr_interviewer_1a1c9c8d305",
+        "scheduled_at": "2026-11-12T08:49:20.575Z"
+      },
+      "final_result": null,
+      "rejection": null
+    },
+    "app_1a1c9da6b60": {
+      "app_id": "app_1a1c9da6b60",
+      "jd_id": "jd_1a1c9da6b60",
+      "candidate_id": "usr_c4047f6ad7db43ee",
+      "candidate_name": "Ashok Nimmala",
+      "candidate_email": "candidate_test_1@example.com",
+      "interviewer_id": "usr_int_1a1c9da6b5f",
+      "interviewer_name": "Priya Sharma",
+      "interviewer_email": "priya.sharma@example.com",
+      "job_title": "Senior Frontend Architect",
+      "organization": "SmartHire",
+      "status": "SCREENING_PASSED",
+      "status_message": "Your resume cleared AI screening with 88% (Threshold: 70%). You are eligible for the written exam.",
+      "applied_at": "2026-11-11T09:04:57.185Z",
+      "updated_at": "2026-11-11T09:04:57.185Z",
+      "screening_threshold": 70,
+      "screening": {
+        "done": true,
+        "passed": true,
+        "score": 88,
+        "threshold": 70,
+        "confidence": 78,
+        "summary": "Candidate resume demonstrated good technical alignment (88%) with the role requirements. Core competencies matched: JavaScript / TypeScript. Cleared screening threshold (70%).",
+        "matched_skills": [
+          "JavaScript / TypeScript"
+        ],
+        "missing_skills": [
+          "React"
+        ]
+      },
+      "exam": {
+        "eligible": true,
+        "exam_id": "exam_1a1c9da6b60",
+        "how_to_start": "open the exam system and sign in with exam_id=exam_1a1c9da6b60",
+        "started": false,
+        "submitted": false,
+        "scored": false,
+        "score_percent": null,
+        "marks_awarded": null,
+        "marks_possible": 20,
+        "answers": [
+          {
+            "id": "q_1a1c9c557b5_de57",
+            "question_id": "q_1a1c9c557b5_de57",
+            "order": 0,
+            "question": "Custom Q1: Explain how Raft consensus algorithm prevents split-brain scenarios and ensures leader election safety.",
+            "reference_answer": "Raft requires a majority quorum (N/2 + 1) for electing a leader and committing log entries. In a network partition, only the partition with a majority can elect a leader, preventing two leaders from committing conflicting logs.",
+            "candidate_answer": "",
+            "marks_awarded": 0,
+            "max_marks": 10,
+            "ai_feedback": "Pending candidate submission."
+          },
+          {
+            "id": "q_1a1c9c557b6_1c7c",
+            "question_id": "q_1a1c9c557b6_1c7c",
+            "order": 1,
+            "question": "Custom Q2: Compare optimistic vs pessimistic concurrency control in distributed databases with high write contention.",
+            "reference_answer": "Optimistic concurrency uses record versioning or timestamps validating on commit, best for low contention. Pessimistic concurrency uses explicit row or range locks before updates, preventing conflicts at the cost of reduced throughput.",
+            "candidate_answer": "",
+            "marks_awarded": 0,
+            "max_marks": 10,
+            "ai_feedback": "Pending candidate submission."
+          }
+        ]
+      },
+      "exam_id": "exam_1a1c9da6b60",
+      "next_action": "EXAM_AVAILABLE",
+      "interview": {
+        "pending": false,
+        "decision": null,
+        "interviewer": "Lead Technical Interviewer",
+        "interviewer_name": "Lead Technical Interviewer",
+        "interviewer_email": "interviewer@example.com",
+        "interviewer_id": "usr_int_1a1c9da6b5f",
+        "scheduled_at": null
+      },
+      "final_result": null,
+      "rejection": null
+    },
+    "app_1a1c9db9565": {
+      "app_id": "app_1a1c9db9565",
+      "jd_id": "jd_1a1c9db9565",
+      "candidate_id": "usr_c4047f6ad7db43ee",
+      "candidate_name": "Ashok Nimmala",
+      "candidate_email": "candidate_test_1@example.com",
+      "interviewer_id": "usr_int_1a1c9db9565",
+      "interviewer_name": "Priya Sharma",
+      "interviewer_email": "priya.sharma_1794387973476@example.com",
+      "job_title": "Senior Frontend Architect",
+      "organization": "SmartHire",
+      "status": "SCREENING_PASSED",
+      "status_message": "Your resume cleared AI screening with 88% (Threshold: 70%). You are eligible for the written exam.",
+      "applied_at": "2026-11-11T09:06:13.479Z",
+      "updated_at": "2026-11-11T09:06:13.479Z",
+      "screening_threshold": 70,
+      "screening": {
+        "done": true,
+        "passed": true,
+        "score": 88,
+        "threshold": 70,
+        "confidence": 78,
+        "summary": "Candidate resume demonstrated good technical alignment (88%) with the role requirements. Core competencies matched: JavaScript / TypeScript. Cleared screening threshold (70%).",
+        "matched_skills": [
+          "JavaScript / TypeScript"
+        ],
+        "missing_skills": [
+          "React"
+        ]
+      },
+      "exam": {
+        "eligible": true,
+        "exam_id": "exam_1a1c9db9565",
+        "how_to_start": "open the exam system and sign in with exam_id=exam_1a1c9db9565",
+        "started": false,
+        "submitted": false,
+        "scored": false,
+        "score_percent": null,
+        "marks_awarded": null,
+        "marks_possible": 20,
+        "answers": [
+          {
+            "id": "q_1a1c9ca1b66_ccb3",
+            "question_id": "q_1a1c9ca1b66_ccb3",
+            "order": 0,
+            "question": "What is a closure in JavaScript?",
+            "reference_answer": "A closure is a function that remembers and can access variables from its outer scope even after the outer function has finished executing.",
+            "candidate_answer": "",
+            "marks_awarded": 0,
+            "max_marks": 10,
+            "ai_feedback": "Pending candidate submission."
+          },
+          {
+            "id": "q_1a1c9ca5651_9418",
+            "question_id": "q_1a1c9ca5651_9418",
+            "order": 1,
+            "question": "How did you reduce search response time from 400 ms to 150 ms?",
+            "reference_answer": "I used hash maps for O(1) lookups and debouncing to avoid firing the search on every keystroke.",
+            "candidate_answer": "",
+            "marks_awarded": 0,
+            "max_marks": 10,
+            "ai_feedback": "Pending candidate submission."
+          }
+        ]
+      },
+      "exam_id": "exam_1a1c9db9565",
+      "next_action": "EXAM_AVAILABLE",
+      "interview": {
+        "pending": false,
+        "decision": null,
+        "interviewer": "Lead Technical Interviewer",
+        "interviewer_name": "Lead Technical Interviewer",
+        "interviewer_email": "interviewer@example.com",
+        "interviewer_id": "usr_int_1a1c9db9565",
+        "scheduled_at": null
+      },
+      "final_result": null,
+      "rejection": null
+    },
+    "app_1a1c9dbaef4": {
+      "app_id": "app_1a1c9dbaef4",
+      "jd_id": "jd_1a1c9dbaef4",
+      "candidate_id": "usr_cand_1a1c9dbaef7",
+      "candidate_name": "Alex Dev",
+      "candidate_email": "alex_dev_custom@example.com",
+      "interviewer_id": "usr_interviewer_1",
+      "interviewer_name": "Lead Technical Interviewer",
+      "interviewer_email": "interviewer@example.com",
+      "job_title": "Senior Full Stack Distributed Systems Architect",
+      "organization": "SmartHire",
+      "status": "INTERVIEW_PENDING",
+      "status_message": "Written exam passed with 90%. Your application is now assigned to the Lead Technical Interviewer for Interview Round.",
+      "applied_at": "2026-11-11T09:06:20.024Z",
+      "updated_at": "2026-11-11T09:06:20.028Z",
+      "screening_threshold": 70,
+      "screening": {
+        "done": true,
+        "passed": true,
+        "score": 84,
+        "threshold": 70,
+        "confidence": 75,
+        "summary": "Candidate resume demonstrated good technical alignment (84%) with the role requirements. Core competencies matched: Foundational Engineering Capabilities. Cleared screening threshold (70%).",
+        "matched_skills": [
+          "Foundational Software Engineering"
+        ],
+        "missing_skills": [
+          "Microservices"
+        ]
+      },
+      "exam": {
+        "eligible": true,
+        "exam_id": "exam_1a1c9dbaef4",
+        "how_to_start": "open the exam system and sign in with exam_id=exam_1a1c9dbaef4",
+        "started": true,
+        "submitted": true,
+        "scored": true,
+        "score_percent": 90,
+        "marks_awarded": 18,
+        "marks_possible": 20,
+        "answers": [
+          {
+            "id": "q_1a1c9dbaef5_1657",
+            "question_id": "q_1a1c9dbaef5_1657",
+            "order": 0,
+            "question": "Custom Q1: Explain how Raft consensus algorithm prevents split-brain scenarios and ensures leader election safety.",
+            "reference_answer": "Raft requires a majority quorum (N/2 + 1) for electing a leader and committing log entries. In a network partition, only the partition with a majority can elect a leader, preventing two leaders from committing conflicting logs.",
+            "candidate_answer": "Raft ensures leader election safety and prevents split-brain by requiring a majority quorum (N/2 + 1) for leader election and log commits. In network partitions, only the majority partition can elect a leader, preventing two conflicting leaders.",
+            "marks_awarded": 9,
+            "max_marks": 10,
+            "ai_feedback": "Strong technical answer! Accurately detailed Raft, Majority, Quorum, Leader matching reference criteria. (9/10)"
+          },
+          {
+            "id": "q_1a1c9dbaef6_f19a",
+            "question_id": "q_1a1c9dbaef6_f19a",
+            "order": 1,
+            "question": "Custom Q2: Compare optimistic vs pessimistic concurrency control in distributed databases with high write contention.",
+            "reference_answer": "Optimistic concurrency uses record versioning or timestamps validating on commit, best for low contention. Pessimistic concurrency uses explicit row or range locks before updates, preventing conflicts at the cost of reduced throughput.",
+            "candidate_answer": "Optimistic concurrency uses version numbers validated during commit, ideal for low write contention. Pessimistic concurrency locks rows or ranges beforehand to prevent conflicts under high write contention at the cost of lower throughput.",
+            "marks_awarded": 9,
+            "max_marks": 10,
+            "ai_feedback": "Strong technical answer! Accurately detailed Optimistic, Concurrency, Commit, Low matching reference criteria. (9/10)"
+          }
+        ],
+        "passed": true
+      },
+      "exam_id": "exam_1a1c9dbaef4",
+      "next_action": "INTERVIEW_PENDING",
+      "interview": {
+        "pending": true,
+        "decision": null,
+        "interviewer": "Lead Technical Interviewer",
+        "interviewer_name": "Lead Technical Interviewer",
+        "interviewer_email": "interviewer@example.com",
+        "interviewer_id": "usr_interviewer_1",
+        "scheduled_at": "2026-11-12T09:06:20.028Z"
+      },
+      "final_result": null,
+      "rejection": null
+    },
+    "app_1a1c9edafaa": {
+      "app_id": "app_1a1c9edafaa",
+      "jd_id": "jd_1a1c9edafaa",
+      "candidate_id": "usr_c4047f6ad7db43ee",
+      "candidate_name": "Ashok Nimmala",
+      "candidate_email": "candidate_test_1@example.com",
+      "interviewer_id": "usr_int_1a1c9edafaa",
+      "interviewer_name": "Priya Sharma",
+      "interviewer_email": "priya.sharma_1794389159849@example.com",
+      "job_title": "Senior Frontend Architect",
+      "organization": "SmartHire",
+      "status": "SCREENING_PASSED",
+      "status_message": "Your resume cleared AI screening with 88% (Threshold: 70%). You are eligible for the written exam.",
+      "applied_at": "2026-11-11T09:25:59.852Z",
+      "updated_at": "2026-11-11T09:25:59.852Z",
+      "screening_threshold": 70,
+      "screening": {
+        "done": true,
+        "passed": true,
+        "score": 88,
+        "threshold": 70,
+        "confidence": 78,
+        "summary": "Candidate resume demonstrated good technical alignment (88%) with the role requirements. Core competencies matched: JavaScript / TypeScript. Cleared screening threshold (70%).",
+        "matched_skills": [
+          "JavaScript / TypeScript"
+        ],
+        "missing_skills": [
+          "React"
+        ]
+      },
+      "exam": {
+        "eligible": true,
+        "exam_id": "exam_1a1c9edafaa",
+        "how_to_start": "open the exam system and sign in with exam_id=exam_1a1c9edafaa",
+        "started": false,
+        "submitted": false,
+        "scored": false,
+        "score_percent": null,
+        "marks_awarded": null,
+        "marks_possible": 20,
+        "answers": [
+          {
+            "id": "q_1a1c9ca1b66_ccb3",
+            "question_id": "q_1a1c9ca1b66_ccb3",
+            "order": 0,
+            "question": "What is a closure in JavaScript?",
+            "reference_answer": "A closure is a function that remembers and can access variables from its outer scope even after the outer function has finished executing.",
+            "candidate_answer": "",
+            "marks_awarded": 0,
+            "max_marks": 10,
+            "ai_feedback": "Pending candidate submission."
+          },
+          {
+            "id": "q_1a1c9ca5651_9418",
+            "question_id": "q_1a1c9ca5651_9418",
+            "order": 1,
+            "question": "How did you reduce search response time from 400 ms to 150 ms?",
+            "reference_answer": "I used hash maps for O(1) lookups and debouncing to avoid firing the search on every keystroke.",
+            "candidate_answer": "",
+            "marks_awarded": 0,
+            "max_marks": 10,
+            "ai_feedback": "Pending candidate submission."
+          }
+        ]
+      },
+      "exam_id": "exam_1a1c9edafaa",
+      "next_action": "EXAM_AVAILABLE",
+      "interview": {
+        "pending": false,
+        "decision": null,
+        "interviewer": "Lead Technical Interviewer",
+        "interviewer_name": "Lead Technical Interviewer",
+        "interviewer_email": "interviewer@example.com",
+        "interviewer_id": "usr_int_1a1c9edafaa",
+        "scheduled_at": null
+      },
+      "final_result": null,
+      "rejection": null
+    }
+  },
+  "interviewerNotes": {
+    "app_22a87f7ed928d004a5a44228": [],
+    "app_cloud_devops_2026": [
+      {
+        "by": "System",
+        "note": "Candidate scored 88% in AI resume screening (Threshold: 75%). Application auto-assigned to Lead Technical Interviewer.",
+        "at": "2026-11-11T06:29:52.808Z"
+      },
+      {
+        "by": "Lead Technical Interviewer",
+        "note": "bad",
+        "action": "FINAL_REJECTED",
+        "at": "2026-11-11T08:51:29.321Z"
+      }
+    ],
+    "app_1a1c94c722d": [
+      {
+        "by": "System",
+        "note": "Candidate passed written exam with 90% (18/20 marks). Auto-assigned to Lead Technical Interviewer.",
+        "at": "2026-11-11T06:29:52.819Z"
+      }
+    ],
+    "app_1a1c94d095a": [
+      {
+        "by": "System",
+        "note": "Candidate passed written exam with 90% (18/20 marks). Auto-assigned to Lead Technical Interviewer.",
+        "at": "2026-11-11T06:30:31.519Z"
+      }
+    ],
+    "app_1a1c94d5498": [
+      {
+        "by": "System",
+        "note": "Candidate passed written exam with 95% (19/20 marks). Auto-assigned to Lead Technical Interviewer.",
+        "at": "2026-11-11T06:30:50.781Z"
+      },
+      {
+        "by": "Lead Technical Interviewer",
+        "note": "Candidate performed exceptionally well in the proctored exam and demonstrated deep knowledge of FastAPI and Kubernetes.",
+        "action": "ACCEPTED",
+        "at": "2026-11-11T06:30:50.782Z"
+      }
+    ],
+    "app_1a1c9559512": [
+      {
+        "by": "System",
+        "note": "Candidate passed written exam with 98% (59/60 marks). Auto-assigned to Lead Technical Interviewer.",
+        "at": "2026-11-11T06:49:21.847Z"
+      },
+      {
+        "by": "Lead Technical Interviewer",
+        "note": "goof",
+        "action": "ACCEPTED",
+        "at": "2026-11-11T06:50:09.625Z"
+      }
+    ],
+    "app_1a1c96e96ac": [
+      {
+        "by": "System",
+        "note": "Candidate passed written exam with 90% (18/20 marks). Auto-assigned to Lead Technical Interviewer.",
+        "at": "2026-11-11T07:07:10.390Z"
+      }
+    ],
+    "app_1a1c9c557b4": [
+      {
+        "by": "System",
+        "note": "Candidate passed written exam with 90% (18/20 marks). Auto-assigned to Lead Technical Interviewer.",
+        "at": "2026-11-11T08:41:55.901Z"
+      }
+    ],
+    "app_1a1c9c9e9c1": [
+      {
+        "by": "System",
+        "note": "Candidate passed written exam with 80% (16/20 marks). Auto-assigned to Lead Technical Interviewer.",
+        "at": "2026-11-11T08:49:20.575Z"
+      },
+      {
+        "by": "Lead Technical Interviewer",
+        "note": "good",
+        "action": "ACCEPTED",
+        "at": "2026-11-11T08:50:21.072Z"
+      }
+    ],
+    "app_1a1c9dbaef4": [
+      {
+        "by": "System",
+        "note": "Candidate passed written exam with 90% (18/20 marks). Auto-assigned to Lead Technical Interviewer.",
+        "at": "2026-11-11T09:06:20.028Z"
+      }
+    ]
+  },
+  "interviewerDecisions": {
+    "app_1a1c94d5498": "ACCEPTED",
+    "app_1a1c9559512": "ACCEPTED",
+    "app_1a1c9c9e9c1": "ACCEPTED",
+    "app_cloud_devops_2026": "FINAL_REJECTED"
+  },
+  "cachedInterviewers": [
+    {
+      "user_id": "usr_interviewer_1",
+      "id": "usr_interviewer_1",
+      "interviewer_id": "usr_interviewer_1",
+      "name": "Lead Technical Interviewer",
+      "email": "interviewer@example.com",
+      "org_id": "org_bnp",
+      "role": "interviewer",
+      "created_at": "2026-11-01T08:00:00Z"
+    },
+    {
+      "user_id": "usr_int_1a1c9db9565",
+      "id": "usr_int_1a1c9db9565",
+      "interviewer_id": "usr_int_1a1c9db9565",
+      "name": "Priya Sharma",
+      "email": "priya.sharma_1794387973476@example.com",
+      "role": "interviewer",
+      "created_at": "2026-11-11T09:06:13.477Z"
+    },
+    {
+      "user_id": "usr_interviewer_1a1c9c8d305",
+      "id": "usr_interviewer_1a1c9c8d305",
+      "interviewer_id": "usr_interviewer_1a1c9c8d305",
+      "name": "nithin",
+      "email": "nithin@gmail.com",
+      "role": "interviewer",
+      "created_at": "2026-11-11T08:46:55.425Z"
+    },
+    {
+      "user_id": "usr_interviewer_1a1c94d5498",
+      "id": "usr_interviewer_1a1c94d5498",
+      "interviewer_id": "usr_interviewer_1a1c94d5498",
+      "name": "Dr. Sarah Jenkins",
+      "email": "sarah.jenkins@bnp.com",
+      "role": "interviewer",
+      "created_at": "2026-11-11T06:30:50.776Z"
+    },
+    {
+      "user_id": "usr_int_1a1c9da6b5f",
+      "id": "usr_int_1a1c9da6b5f",
+      "interviewer_id": "usr_int_1a1c9da6b5f",
+      "name": "Priya Sharma",
+      "email": "priya.sharma@example.com",
+      "role": "interviewer",
+      "created_at": "2026-11-11T09:04:57.184Z"
+    },
+    {
+      "user_id": "usr_int_1a1c9edafaa",
+      "id": "usr_int_1a1c9edafaa",
+      "interviewer_id": "usr_int_1a1c9edafaa",
+      "name": "Priya Sharma",
+      "email": "priya.sharma_1794389159849@example.com",
+      "org_id": "org_bnp",
+      "role": "interviewer",
+      "created_at": "2026-11-11T09:25:59.850Z"
+    }
+  ]
+}

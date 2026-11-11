@@ -1,0 +1,23 @@
+{
+  "name": "smarthire-suite",
+  "version": "1.0.0",
+  "description": "SmartHire Autonomous AI Hiring & Interview Platform",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-unified.js",
+    "build:candidate": "npm --prefix Frontend/smarthire-candidate-frontend run build",
+    "build:interviewer": "npm --prefix Frontend/SmartHire-interviewer-frontend run build",
+    "build:admin": "npm --prefix Frontend/smarthire-admin-frontend run build",
+    "start": "node Backend/local_proxy.js",
+    "start:backend": "node Backend/local_proxy.js",
+    "dev:gateway": "node Frontend/gateway/serve.js",
+    "dev:candidate": "npm --prefix Frontend/smarthire-candidate-frontend run dev",
+    "dev:interviewer": "npm --prefix Frontend/SmartHire-interviewer-frontend run dev",
+    "dev:admin": "npm --prefix Frontend/smarthire-admin-frontend run dev",
+    "test": "node Backend/test_full_e2e.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+

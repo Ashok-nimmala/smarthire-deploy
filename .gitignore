@@ -1,0 +1,21 @@
+# secrets
+.env
+.env.*
+!.env.example
+firebase-service-account*.json
+# python
+__pycache__/
+*.pyc
+venv/
+.venv/
+# node / web
+node_modules/
+dist/
+# android / gradle
+.gradle/
+.kotlin/
+.idea/
+build/
+local.properties
+*.apk
+.DS_Store
