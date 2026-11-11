@@ -2559,7 +2559,7 @@ function Application() {
             <div style={{ marginTop: "18px", display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
               <a
                 className="btn dark"
-                href={`${ext || `${BASE_URL}/proctored-exam`}?exam_id=${encodeURIComponent(exam)}&email=${encodeURIComponent(a?.candidate_email || "candidate_test_1@example.com")}&api_base=${encodeURIComponent(BASE_URL)}`}
+                href={`${(ext || (typeof window !== "undefined" && (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") ? "http://localhost:5176" : `${window.location.origin}/proctored-exam`)).replace(/\/+$/, '')}/?exam_id=${encodeURIComponent(exam)}&email=${encodeURIComponent(a?.candidate_email || "candidate_test_1@example.com")}&api_base=${encodeURIComponent(BASE_URL)}`}
                 target="_blank"
                 rel="noreferrer"
                 style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "10px 22px", fontSize: "13px" }}
@@ -2571,7 +2571,7 @@ function Application() {
 
               <a
                 className="btn secondary"
-                href={`${BASE_URL}/proctored-exam/?exam_id=${encodeURIComponent(exam)}&email=${encodeURIComponent(a?.candidate_email || "candidate_test_1@example.com")}&api_base=${encodeURIComponent(BASE_URL)}`}
+                href={`${BASE_URL.replace(/\/+$/, '')}/proctored-exam/?exam_id=${encodeURIComponent(exam)}&email=${encodeURIComponent(a?.candidate_email || "candidate_test_1@example.com")}&api_base=${encodeURIComponent(BASE_URL)}`}
                 target="_blank"
                 rel="noreferrer"
                 style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px" }}

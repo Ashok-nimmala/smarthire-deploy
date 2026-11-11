@@ -740,8 +740,13 @@ function resolveExamContext(eid, req) {
   return { app, job, questions };
 }
 
-const PROCTORED_EXAM_DIR = path.resolve(__dirname, "../Frontend/proctored-exam");
-const GATEWAY_HTML = path.resolve(__dirname, "../Frontend/gateway/index.html");
+const PROCTORED_EXAM_DIR = fs.existsSync(path.resolve(__dirname, "proctored-exam"))
+  ? path.resolve(__dirname, "proctored-exam")
+  : path.resolve(__dirname, "../Frontend/proctored-exam");
+
+const GATEWAY_HTML = fs.existsSync(path.resolve(__dirname, "gateway/index.html"))
+  ? path.resolve(__dirname, "gateway/index.html")
+  : path.resolve(__dirname, "../Frontend/gateway/index.html");
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
@@ -1243,11 +1248,32 @@ const server = http.createServer(async (req, res) => {
   const parsedUrl = url.parse(req.url, true);
   let pathname = (parsedUrl.pathname || '').replace(/^\/+/, '').replace(/\/+$/, '');
 
+  // Handle /proctored-exam without trailing slash -> 301 redirect to /proctored-exam/
+  if (pathname === 'proctored-exam' && !(parsedUrl.pathname || '').endsWith('/')) {
+    res.writeHead(301, {
+      'Location': `/proctored-exam/${parsedUrl.search || ''}`,
+      'Access-Control-Allow-Origin': '*'
+    });
+    res.end();
+    return;
+  }
+
   // Static files for /proctored-exam
   if (pathname.startsWith('proctored-exam')) {
     let sub = pathname.replace(/^proctored-exam\/?/, '');
     if (!sub || sub === '') sub = 'index.html';
     const filePath = path.join(PROCTORED_EXAM_DIR, sub);
+    if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
+      const ext = path.extname(filePath).toLowerCase();
+      res.writeHead(200, { 'Content-Type': MIME[ext] || 'application/octet-stream' });
+      res.end(fs.readFileSync(filePath));
+      return;
+    }
+  }
+
+  // Root fallback for relative assets requested by proctored-exam (css, js, exam.html, result.html)
+  if (['css', 'js'].includes(pathname.split('/')[0]) || ['exam.html', 'result.html'].includes(pathname)) {
+    const filePath = path.join(PROCTORED_EXAM_DIR, pathname);
     if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
       const ext = path.extname(filePath).toLowerCase();
       res.writeHead(200, { 'Content-Type': MIME[ext] || 'application/octet-stream' });

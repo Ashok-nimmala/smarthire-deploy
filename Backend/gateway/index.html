@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartHire — Unified Access Gateway</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: #111827;
+      --card-border: #1f2937;
+      --card-border-focus: #00965e;
+      --text: #f3f4f6;
+      --text-muted: #94a3b8;
+      --bnp-green: #00965e;
+      --bnp-green-hover: #007a4d;
+      --font: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(circle at 50% 15%, rgba(0, 150, 94, 0.12) 0%, transparent 60%),
+        radial-gradient(circle at 85% 85%, rgba(30, 58, 138, 0.12) 0%, transparent 50%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+
+    .gateway-container {
+      width: 100%;
+      max-width: 440px;
+    }
+
+    /* Brand Header */
+    .brand-header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .brand-icon {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 14px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #00965e 0%, #10b981 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 22px;
+      color: #ffffff;
+      box-shadow: 0 8px 24px rgba(0, 150, 94, 0.35);
+    }
+
+    .brand-title {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+
+    .brand-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Main Auth Card */
+    .auth-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Mode Tabs: Sign In / Create Account */
+    .mode-tabs {
+      display: flex;
+      background: #0d131f;
+      padding: 4px;
+      border-radius: 10px;
+      border: 1px solid #1e293b;
+      margin-bottom: 22px;
+    }
+
+    .mode-tab {
+      flex: 1;
+      padding: 9px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      border-radius: 7px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .mode-tab.active {
+      background: #1e293b;
+      color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Role Selector */
+    .role-section-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .role-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .role-option {
+      background: #0d131f;
+      border: 1.5px solid #1e293b;
+      border-radius: 10px;
+      padding: 12px 6px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .role-option:hover {
+      border-color: #334155;
+      background: #131b2c;
+    }
+
+    .role-option.active {
+      border-color: var(--bnp-green);
+      background: rgba(0, 150, 94, 0.1);
+    }
+
+    .role-icon {
+      font-size: 20px;
+    }
+
+    .role-name {
+      font-size: 12px;
+      font-weight: 700;
+      color: #e2e8f0;
+    }
+
+    .role-option.active .role-name {
+      color: #34d399;
+    }
+
+    /* Form Fields */
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      color: #cbd5e1;
+      margin-bottom: 6px;
+    }
+
+    .form-input {
+      width: 100%;
+      background: #0d131f;
+      border: 1px solid #1e293b;
+      border-radius: 8px;
+      padding: 11px 14px;
+      color: #ffffff;
+      font-size: 14px;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .form-input:focus {
+      border-color: var(--bnp-green);
+      box-shadow: 0 0 0 3px rgba(0, 150, 94, 0.2);
+    }
+
+    .form-input::placeholder {
+      color: #475569;
+    }
+
+    /* Alert Boxes */
+    .alert {
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      margin-bottom: 16px;
+      display: none;
+      line-height: 1.4;
+    }
+
+    .alert-error {
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      color: #fca5a5;
+    }
+
+    .alert-success {
+      background: rgba(0, 150, 94, 0.15);
+      border: 1px solid rgba(0, 150, 94, 0.35);
+      color: #86efac;
+    }
+
+    /* Submit Button */
+    .submit-button {
+      width: 100%;
+      background: var(--bnp-green);
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 14px;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: background-color 0.15s ease, transform 0.05s ease;
+      margin-top: 20px;
+    }
+
+    .submit-button:hover {
+      background: var(--bnp-green-hover);
+    }
+
+    .submit-button:active {
+      transform: scale(0.99);
+    }
+
+    .submit-button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    /* Toggle Link */
+    .toggle-link-wrap {
+      text-align: center;
+      margin-top: 18px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .toggle-link {
+      color: #34d399;
+      background: none;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 13px;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      margin-left: 4px;
+      font-family: inherit;
+    }
+
+    .toggle-link:hover {
+      color: #6ee7b7;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      font-size: 12px;
+      color: #475569;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gateway-container">
+
+    <!-- Brand Header -->
+    <div class="brand-header">
+      <div class="brand-icon">SH</div>
+      <h1 class="brand-title">SmartHire</h1>
+      <p class="brand-subtitle">Unified Access Gateway</p>
+    </div>
+
+    <!-- Main Card -->
+    <div class="auth-card">
+
+      <!-- Tabs: Sign In / Create Account -->
+      <div class="mode-tabs">
+        <button type="button" class="mode-tab active" id="tab-signin" onclick="setMode('signin')">Sign In</button>
+        <button type="button" class="mode-tab" id="tab-signup" onclick="setMode('signup')">Create Account</button>
+      </div>
+
+      <!-- Role Selector -->
+      <label class="role-section-label">Select Role</label>
+      <div class="role-grid">
+        <div class="role-option active" id="role-candidate" onclick="selectRole('candidate')">
+          <span class="role-icon">👤</span>
+          <span class="role-name">Candidate</span>
+        </div>
+        <div class="role-option" id="role-interviewer" onclick="selectRole('interviewer')">
+          <span class="role-icon">📋</span>
+          <span class="role-name">Interviewer</span>
+        </div>
+        <div class="role-option" id="role-admin" onclick="selectRole('admin')">
+          <span class="role-icon">👔</span>
+          <span class="role-name">Admin</span>
+        </div>
+      </div>
+
+      <!-- Alerts -->
+      <div id="alert-error" class="alert alert-error"></div>
+      <div id="alert-success" class="alert alert-success"></div>
+
+      <!-- Authentication Form -->
+      <form id="auth-form" onsubmit="handleSubmit(event)">
+
+        <!-- Full Name (Only shown for Create Account) -->
+        <div class="form-group" id="group-name" style="display: none;">
+          <label class="form-label" for="input-name">Full Name</label>
+          <input type="text" id="input-name" class="form-input" placeholder="e.g. John Doe">
+        </div>
+
+        <!-- Email / Username -->
+        <div class="form-group">
+          <label class="form-label" id="label-identifier" for="input-identifier">Email or Username</label>
+          <input type="text" id="input-identifier" class="form-input" placeholder="name@example.com" required value="candidate_test_1@example.com">
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label class="form-label" for="input-password">Password</label>
+          <input type="password" id="input-password" class="form-input" placeholder="••••••••••••" required value="Password123!">
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-button" id="submit-button">
+          <span id="button-label">Sign In to Candidate Portal</span>
+          <span>→</span>
+        </button>
+
+      </form>
+
+      <!-- Toggle Link -->
+      <div class="toggle-link-wrap">
+        <span id="toggle-prompt">Don't have an account?</span>
+        <button type="button" class="toggle-link" id="toggle-button" onclick="toggleMode()">Create an account</button>
+      </div>
+
+    </div>
+
+    <footer>
+      SmartHire Platform • Autonomous Hiring
+    </footer>
+
+  </div>
+
+  <script>
+    let currentRole = 'candidate';
+    let currentMode = 'signin';
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+
+    const DEPLOYED_RENDER_API = 'https://smarthire-deploy-api.onrender.com';
+
+    let API_BASE = urlParams.get('api_base')
+      || (typeof window !== 'undefined' && window.SMARTHIRE_API_BASE)
+      || (typeof localStorage !== 'undefined' && localStorage.getItem('smarthire_api_base'))
+      || (isLocal ? 'http://localhost:8000' : DEPLOYED_RENDER_API);
+
+    const DEFAULT_PORTAL_CONFIG = {
+      candidate: {
+        url: isLocal ? 'http://localhost:5174/' : '/candidate/',
+        name: 'Candidate Portal'
+      },
+      interviewer: {
+        url: isLocal ? 'http://localhost:5175/' : '/interviewer/',
+        name: 'Interviewer Portal'
+      },
+      admin: {
+        url: isLocal ? 'http://localhost:5173/' : '/admin/',
+        name: 'Admin Portal'
+      }
+    };
+
+    function getPortalTarget(role) {
+      let savedUrls = {};
+      try {
+        savedUrls = JSON.parse(localStorage.getItem('smarthire_portal_urls') || '{}');
+      } catch (_) {}
+      const paramUrl = urlParams.get(role + '_url');
+      const config = DEFAULT_PORTAL_CONFIG[role] || {};
+      const base = paramUrl || savedUrls[role] || (window.PORTAL_URLS && window.PORTAL_URLS[role]) || config.url || '/';
+      return {
+        baseUrl: base,
+        name: config.name || `${role.charAt(0).toUpperCase() + role.slice(1)} Portal`
+      };
+    }
+
+    const ROLE_DEFAULTS = {
+      candidate: 'candidate_test_1@example.com',
+      interviewer: 'interviewer@example.com',
+      admin: 'admin@bnp.com'
+    };
+
+    function selectRole(role) {
+      currentRole = role;
+      document.querySelectorAll('.role-option').forEach(el => el.classList.remove('active'));
+      const activeEl = document.getElementById('role-' + role);
+      if (activeEl) activeEl.classList.add('active');
+
+      const idInput = document.getElementById('input-identifier');
+      if (currentMode === 'signin') {
+        const isKnownDefault = Object.values(ROLE_DEFAULTS).includes(idInput.value);
+        if (!idInput.value || isKnownDefault) {
+          idInput.value = ROLE_DEFAULTS[role];
+        }
+      }
+      updateLabels();
+    }
+
+    function setMode(mode) {
+      currentMode = mode;
+      document.getElementById('tab-signin').classList.toggle('active', mode === 'signin');
+      document.getElementById('tab-signup').classList.toggle('active', mode === 'signup');
+
+      const nameGroup = document.getElementById('group-name');
+      const togglePrompt = document.getElementById('toggle-prompt');
+      const toggleBtn = document.getElementById('toggle-button');
+
+      if (mode === 'signup') {
+        nameGroup.style.display = 'block';
+        togglePrompt.textContent = 'Already have an account?';
+        toggleBtn.textContent = 'Sign In';
+      } else {
+        nameGroup.style.display = 'none';
+        togglePrompt.textContent = "Don't have an account?";
+        toggleBtn.textContent = 'Create an account';
+      }
+
+      updateLabels();
+      hideAlerts();
+    }
+
+    function toggleMode() {
+      setMode(currentMode === 'signin' ? 'signup' : 'signin');
+    }
+
+    function updateLabels() {
+      const btnLabel = document.getElementById('button-label');
+      const target = getPortalTarget(currentRole);
+      const roleCapitalized = currentRole.charAt(0).toUpperCase() + currentRole.slice(1);
+
+      if (currentMode === 'signin') {
+        btnLabel.textContent = `Sign In to ${target.name}`;
+      } else {
+        btnLabel.textContent = `Create ${roleCapitalized} Account & Enter`;
+      }
+    }
+
+    function showAlert(type, message) {
+      const err = document.getElementById('alert-error');
+      const succ = document.getElementById('alert-success');
+      if (type === 'error') {
+        err.textContent = message;
+        err.style.display = 'block';
+        succ.style.display = 'none';
+      } else {
+        succ.textContent = message;
+        succ.style.display = 'block';
+        err.style.display = 'none';
+      }
+    }
+
+    function hideAlerts() {
+      document.getElementById('alert-error').style.display = 'none';
+      document.getElementById('alert-success').style.display = 'none';
+    }
+
+    async function handleSubmit(e) {
+      e.preventDefault();
+      hideAlerts();
+
+      const btn = document.getElementById('submit-button');
+      const labelSpan = document.getElementById('button-label');
+      const originalText = labelSpan.textContent;
+
+      btn.disabled = true;
+      labelSpan.textContent = 'Authenticating...';
+
+      const identifier = document.getElementById('input-identifier').value.trim();
+      const password = document.getElementById('input-password').value;
+      const fullName = document.getElementById('input-name')?.value?.trim() || identifier.split('@')[0];
+
+      let email = identifier;
+      if (!email.includes('@')) {
+        email = identifier.replace(/\\s+/g, '.').toLowerCase() + '@example.com';
+      }
+
+      try {
+        let endpoint = '/auth/login';
+        let payload = { email, password, role: currentRole, name: fullName };
+
+        if (currentMode === 'signup') {
+          if (currentRole === 'admin') {
+            endpoint = '/auth/signup/admin';
+            payload = { email, password, name: fullName, organization_name: 'BNP Paribas' };
+          } else if (currentRole === 'interviewer') {
+            endpoint = '/auth/signup/interviewer';
+            payload = { email, password, name: fullName };
+          } else {
+            endpoint = '/auth/signup/candidate';
+            payload = { email, password, name: fullName };
+          }
+        }
+
+        const resp = await fetch(`${API_BASE}${endpoint}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        const resData = await resp.json();
+
+        if (!resp.ok || resData.success === false) {
+          throw new Error(resData.error?.message || resData.message || 'Authentication failed');
+        }
+
+        const d = resData.data || {};
+        const token = d.session_token || `sess_${currentRole}_token_local`;
+        const userId = d.user_id || `usr_${currentRole}`;
+        const userName = d.name || fullName;
+        const userEmail = d.email || email;
+
+        const target = getPortalTarget(currentRole);
+        showAlert('success', `✓ Authenticated successfully! Launching ${target.name}...`);
+
+        let targetUrl;
+        try {
+          targetUrl = new URL(target.baseUrl, window.location.href);
+        } catch (_) {
+          targetUrl = new URL(target.baseUrl, window.location.origin);
+        }
+
+        targetUrl.searchParams.set('session_token', token);
+        targetUrl.searchParams.set('token', token);
+        targetUrl.searchParams.set('user_id', userId);
+        targetUrl.searchParams.set('role', currentRole);
+        targetUrl.searchParams.set('name', userName);
+        targetUrl.searchParams.set('email', userEmail);
+        if (API_BASE && !isLocal) {
+          targetUrl.searchParams.set('api_base', API_BASE);
+        }
+
+        setTimeout(() => {
+          window.location.href = targetUrl.toString();
+        }, 500);
+
+      } catch (err) {
+        showAlert('error', err.message || 'Could not authenticate. Please verify details.');
+        btn.disabled = false;
+        labelSpan.textContent = originalText;
+      }
+    }
+  </script>
+</body>
+</html>
