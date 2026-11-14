@@ -221,3 +221,4 @@ When the candidate submits open-ended answers during the proctored exam:
 | **Q3: What makes this architecture scalable?** | *"The frontends are decoupled micro-apps compiled into optimized static single-page applications deployable to edge CDNs (Vercel/Netlify). The backend is a zero-dependency, ultra-lightweight Node.js microservice running on Render with sub-50ms latency."* |
 | **Q4: How is data isolated between interviewers?** | *"Every interviewer session is cryptographically scoped. The backend strictly filters jobs, questions, and candidates by interviewer ID and email. An interviewer cannot view or alter candidates assigned to another interviewer."* |
 | **Q5: Can the screening threshold be adjusted per job?** | *"Yes. The Admin customizes both the Resume Screening Threshold % and the Exam Pass Threshold % per job during JD creation, allowing senior roles to have stricter cut-offs than junior roles."* |
+

@@ -109,8 +109,13 @@ async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
 }
 
 export async function login(email: string, password: string): Promise<Session> {
-  const params = new URLSearchParams({ email, password });
-  const data = await request<any>(`/auth/login?${params.toString()}`, { method: "GET" });
+  const cleanEmail = email.trim().toLowerCase();
+  const params = new URLSearchParams({ email: cleanEmail, password, role: "interviewer" });
+  const data = await request<any>(`/auth/login?${params.toString()}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email: cleanEmail, password, role: "interviewer" })
+  });
 
   if (data.role !== "interviewer") {
     throw new SmartHireApiError("FORBIDDEN", "This account is not an interviewer account.", 403);

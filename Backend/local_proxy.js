@@ -1434,21 +1434,79 @@ Software Developer (2022 - Present)
     const referer = (req.headers.referer || req.headers.origin || "").toLowerCase();
     const explicitRole = (bodyJson && bodyJson.role) || parsedUrl.query.role;
 
+    // Check if email belongs to any registered interviewer in cachedInterviewers or cachedJobs
+    const isRegisteredInterviewer = cachedInterviewers.some(i => i.email && i.email.toLowerCase() === qEmail)
+      || cachedJobs.some(j => j.interviewer_email && j.interviewer_email.toLowerCase() === qEmail)
+      || Boolean(interviewerSessions[qEmail]);
+
+    const isInterviewerContext = (explicitRole && String(explicitRole).toLowerCase() === 'interviewer')
+      || isRegisteredInterviewer
+      || referer.includes('/interviewer')
+      || referer.includes('interviewer')
+      || referer.includes(':5175');
+
+    const isKnownAdmin = qEmail.includes('admin') || qEmail === 'admin@bnp.com';
+    const isAdminContext = (explicitRole && String(explicitRole).toLowerCase() === 'admin')
+      || isKnownAdmin
+      || referer.includes('/admin')
+      || referer.includes(':5173');
+
     let role = explicitRole ? String(explicitRole).toLowerCase() : null;
     if (!role) {
-      if (referer.includes(':5173') || qEmail.includes('admin')) {
-        role = "admin";
-      } else if (referer.includes(':5175') || qEmail.includes('interviewer')) {
+      if (isRegisteredInterviewer || isInterviewerContext) {
         role = "interviewer";
-      } else if (referer.includes(':5174') || qEmail.includes('candidate')) {
+      } else if (isAdminContext) {
+        role = "admin";
+      } else if (referer.includes('/candidate') || referer.includes(':5174')) {
         role = "candidate";
+      } else if (qEmail.includes('interviewer')) {
+        role = "interviewer";
       } else {
-        role = qEmail.includes('admin') ? "admin" : qEmail.includes('interviewer') ? "interviewer" : "candidate";
+        role = "candidate";
       }
     }
 
-    const isAdmin = role === "admin";
-    const isInterviewer = role === "interviewer";
+    const isAdmin = role === "admin" || (isAdminContext && role !== "interviewer");
+    const isInterviewer = role === "interviewer" || isInterviewerContext || isRegisteredInterviewer;
+
+    if (isInterviewer) {
+      let matchedInterviewer = cachedInterviewers.find(i => i.email && i.email.toLowerCase() === qEmail);
+      if (!matchedInterviewer && qEmail) {
+        const newIntId = `usr_int_${Date.now().toString(16)}`;
+        matchedInterviewer = {
+          user_id: newIntId,
+          interviewer_id: newIntId,
+          id: newIntId,
+          name: (bodyJson && bodyJson.name) || qEmail.split('@')[0].replace(/[._-]/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
+          email: qEmail,
+          role: "interviewer",
+          created_at: new Date().toISOString()
+        };
+        cachedInterviewers.push(matchedInterviewer);
+        saveStateToDisk();
+      }
+      if (!matchedInterviewer) {
+        matchedInterviewer = cachedInterviewers[0];
+      }
+      const sessToken = `sess_interviewer_${Date.now().toString(16)}`;
+      interviewerSessions[sessToken] = matchedInterviewer;
+      interviewerSessions[matchedInterviewer.user_id] = matchedInterviewer;
+      if (matchedInterviewer.email) interviewerSessions[matchedInterviewer.email.toLowerCase()] = matchedInterviewer;
+
+      return sendJson({
+        success: true,
+        data: {
+          session_token: sessToken,
+          user_id: matchedInterviewer.user_id || matchedInterviewer.id,
+          role: "interviewer",
+          name: matchedInterviewer.name,
+          email: matchedInterviewer.email,
+          org_id: "org_bnp",
+          organization_name: "SmartHire"
+        },
+        message: "interviewer authenticated successfully"
+      });
+    }
 
     if (role === "candidate") {
       let cand = registeredCandidates[qEmail];
@@ -1506,43 +1564,7 @@ TECHNICAL SKILLS
       });
     }
 
-    let matchedInterviewer = null;
-    if (isInterviewer) {
-      matchedInterviewer = cachedInterviewers.find(i => i.email && i.email.toLowerCase() === qEmail);
-      if (!matchedInterviewer && qEmail) {
-        const newIntId = `usr_int_${Date.now().toString(16)}`;
-        matchedInterviewer = {
-          user_id: newIntId,
-          interviewer_id: newIntId,
-          id: newIntId,
-          name: (bodyJson && bodyJson.name) || qEmail.split('@')[0].replace(/[._-]/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
-          email: qEmail,
-          role: "interviewer"
-        };
-        cachedInterviewers.push(matchedInterviewer);
-      }
-      if (!matchedInterviewer) {
-        matchedInterviewer = cachedInterviewers[0];
-      }
-      const sessToken = `sess_interviewer_${Date.now().toString(16)}`;
-      interviewerSessions[sessToken] = matchedInterviewer;
-      interviewerSessions[matchedInterviewer.user_id] = matchedInterviewer;
-      if (matchedInterviewer.email) interviewerSessions[matchedInterviewer.email.toLowerCase()] = matchedInterviewer;
 
-      return sendJson({
-        success: true,
-        data: {
-          session_token: sessToken,
-          user_id: matchedInterviewer.user_id,
-          role: "interviewer",
-          name: matchedInterviewer.name,
-          email: matchedInterviewer.email,
-          org_id: "org_bnp",
-          organization_name: "SmartHire"
-        },
-        message: "interviewer authenticated successfully"
-      });
-    }
 
     return sendJson({
       success: true,
